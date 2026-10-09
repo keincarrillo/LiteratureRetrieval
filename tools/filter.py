@@ -1,3 +1,4 @@
+import argparse
 import csv
 import html
 import http.server
@@ -12,9 +13,9 @@ PALABRAS_POR_FRAGMENTO = 500
 ID_INICIO = 1
 META_DOCUMENTOS = 100
 
+# Configuración por defecto (retrocompatibilidad: comportamiento original Kundera)
 ARCHIVO_LIBRO = "La insoportable levedad del ser - Milan Kundera.txt"
 ARCHIVO_SALIDA = "corpus_kundera.csv"
-
 BOOK_ID = "kundera_levedad"
 TITLE = "La insoportable levedad del ser"
 AUTHOR = "Milan Kundera"
@@ -68,6 +69,44 @@ GLOBAL_CANDIDATOS = []
 GLOBAL_MAP = {}
 
 
+def cargar_config(ruta_config=None):
+    global ARCHIVO_LIBRO, ARCHIVO_SALIDA, BOOK_ID, TITLE, AUTHOR, LANGUAGE, SOURCE, URL, META_DOCUMENTOS, MOTIVOS_KUNDERA
+    if ruta_config is None:
+        return
+    try:
+        with open(ruta_config, "r", encoding="utf-8") as f:
+            cfg = json.load(f)
+    except Exception as e:
+        print(f"[WARN] No se pudo cargar config {ruta_config}: {e}")
+        return
+
+    base_dir = os.path.dirname(os.path.abspath(ruta_config))
+    ARCHIVO_LIBRO = cfg.get("txt") or ARCHIVO_LIBRO
+    ARCHIVO_SALIDA = cfg.get("csv") or ARCHIVO_SALIDA
+    BOOK_ID = cfg.get("book_id") or BOOK_ID
+    TITLE = cfg.get("title") or TITLE
+    AUTHOR = cfg.get("author") or AUTHOR
+    LANGUAGE = cfg.get("language") or LANGUAGE
+    SOURCE = cfg.get("source") or SOURCE
+    URL = cfg.get("url") or URL
+    if "meta_documentos" in cfg:
+        try:
+            META_DOCUMENTOS = int(cfg["meta_documentos"])
+        except Exception:
+            pass
+
+    motivos = cfg.get("motivos_filter") or cfg.get("motivos") or []
+    if motivos:
+        MOTIVOS_KUNDERA = list(motivos)
+
+    # Si las rutas son relativas, resuelve respecto a book_dir
+    if not os.path.isabs(ARCHIVO_LIBRO):
+        ARCHIVO_LIBRO = os.path.join(base_dir, ARCHIVO_LIBRO)
+    if not os.path.isabs(ARCHIVO_SALIDA):
+        ARCHIVO_SALIDA = os.path.join(base_dir, ARCHIVO_SALIDA)
+
+
+
 def calcular_relevancia(texto):
     score = 0
     t_min = texto.lower()
@@ -110,7 +149,7 @@ def extraer_capitulos(ruta_archivo):
             parte_actual = encabezado
             continue
 
-        if encabezado.lower() == "la insoportable levedad del ser":
+        if encabezado.lower() == TITLE.lower():
             continue
 
         etiqueta_cap = (
@@ -262,7 +301,7 @@ HTML_PAGE = """<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Revisor & Editor | Kundera NLP</title>
+<title>Revisor & Editor | {TITLE}</title>
 <style>
   :root {
     --bg: #f8fafc;
@@ -435,12 +474,12 @@ HTML_PAGE = """<!DOCTYPE html>
   <div class="container">
     <div class="header">
       <div>
-        <span class="title">La insoportable levedad del ser</span>
-        <span class="subtitle">Milan Kundera &bull; <button id="btnSort" class="btn" style="padding: 2px 6px; font-size: 11px;">Relevancia ▼</button></span>
+        <span class="title">{TITLE}</span>
+        <span class="subtitle">{AUTHOR} &bull; <button id="btnSort" class="btn" style="padding: 2px 6px; font-size: 11px;">Relevancia ▼</button></span>
       </div>
       <div style="display: flex; gap: 12px; align-items: center;">
         <span style="font-size: 12px; color: var(--text-muted);" id="candIndexText">0 / 0</span>
-        <span style="font-size: 13px; font-weight: 700; color: #059669;" id="progressText">0 / 100 aceptados</span>
+        <span style="font-size: 13px; font-weight: 700; color: #059669;" id="progressText">0 / {META_DOCUMENTOS} aceptados</span>
       </div>
     </div>
 
@@ -541,8 +580,8 @@ HTML_PAGE = """<!DOCTYPE html>
       document.getElementById('candIndexText').innerText = `${currentIndex + 1} de ${candidates.length}`;
 
       const aceptados = candidates.filter(x => x.accepted).length;
-      document.getElementById('progressText').innerText = `${aceptados} / 100 aceptados`;
-      const pct = Math.min(100, Math.round((aceptados / 100) * 100));
+      document.getElementById('progressText').innerText = `${aceptados} / {META_DOCUMENTOS} aceptados`;
+      const pct = Math.min(100, Math.round((aceptados / {META_DOCUMENTOS}) * 100));
       document.getElementById('progressFill').style.width = `${pct}%`;
 
       document.getElementById('btnAddPrev').disabled = (c.p_inicio <= 0);
@@ -746,6 +785,14 @@ HTML_PAGE = """<!DOCTYPE html>
 """
 
 
+def render_pagina():
+    return (
+        HTML_PAGE.replace("{TITLE}", html.escape(TITLE))
+        .replace("{AUTHOR}", html.escape(AUTHOR))
+        .replace("{META_DOCUMENTOS}", str(META_DOCUMENTOS))
+    )
+
+
 class Handler(http.server.BaseHTTPRequestHandler):
 
     def log_message(self, format, *args):
@@ -756,7 +803,7 @@ class Handler(http.server.BaseHTTPRequestHandler):
             self.send_response(200)
             self.send_header("Content-type", "text/html; charset=utf-8")
             self.end_headers()
-            self.wfile.write(HTML_PAGE.encode("utf-8"))
+            self.wfile.write(render_pagina().encode("utf-8"))
         elif self.path == "/api/data":
             self.send_response(200)
             self.send_header("Content-type", "application/json; charset=utf-8")
@@ -885,6 +932,12 @@ def encontrar_puerto_libre(puerto_inicial=8080):
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Revisor y editor de fragmentos para corpus literario")
+    parser.add_argument("--config", "-c", type=str, help="Ruta a book.json con metadatos y motivos")
+    args = parser.parse_args()
+
+    cargar_config(args.config)
+
     if not os.path.exists(ARCHIVO_LIBRO):
         print(f"Error: No se encontró '{ARCHIVO_LIBRO}'.")
         sys.exit(1)

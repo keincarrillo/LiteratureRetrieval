@@ -1,10 +1,13 @@
+import argparse
 import csv
+import json
 import os
 import re
 import sys
 
 ARCHIVO_CSV = "corpus_kundera.csv"
 ARCHIVO_SALIDA = "corpus_kundera.csv"
+BOOK_ID_CFG = None
 
 # Diccionario amplio de motivos y conceptos de la obra
 MOTIVOS_KUNDERA = {
@@ -81,6 +84,34 @@ def extraer_todas_las_keywords(texto):
     return ", ".join(encontradas)
 
 
+def cargar_config(ruta_config=None):
+    global ARCHIVO_CSV, ARCHIVO_SALIDA, MOTIVOS_KUNDERA, BOOK_ID_CFG
+    if ruta_config is None:
+        return
+    try:
+        with open(ruta_config, "r", encoding="utf-8") as f:
+            cfg = json.load(f)
+    except Exception as e:
+        print(f"[WARN] No se pudo cargar config {ruta_config}: {e}")
+        return
+
+    base_dir = os.path.dirname(os.path.abspath(ruta_config))
+    ARCHIVO_CSV = cfg.get("csv") or ARCHIVO_CSV
+    ARCHIVO_SALIDA = cfg.get("csv") or ARCHIVO_CSV
+    motivos = cfg.get("motivos_keywords") or cfg.get("motivos") or {}
+    if motivos:
+        if isinstance(motivos, list):
+            MOTIVOS_KUNDERA = {f"kw_{i}": m for i, m in enumerate(motivos)}
+        else:
+            MOTIVOS_KUNDERA = dict(motivos)
+    BOOK_ID_CFG = cfg.get("book_id") or BOOK_ID_CFG
+
+    if not os.path.isabs(ARCHIVO_CSV):
+        ARCHIVO_CSV = os.path.join(base_dir, ARCHIVO_CSV)
+    if not os.path.isabs(ARCHIVO_SALIDA):
+        ARCHIVO_SALIDA = os.path.join(base_dir, ARCHIVO_SALIDA)
+
+
 def actualizar_corpus():
     if not os.path.exists(ARCHIVO_CSV):
         print(f"Error: No existe el archivo '{ARCHIVO_CSV}'.")
@@ -94,7 +125,9 @@ def actualizar_corpus():
         sys.exit(1)
 
     for fila in filas:
-        fila["book_id"] = "kundera_levedad"
+        if not fila.get("book_id"):
+            if BOOK_ID_CFG:
+                fila["book_id"] = BOOK_ID_CFG
         fila["keywords"] = extraer_todas_las_keywords(fila.get("text", ""))
 
     with open(ARCHIVO_SALIDA, "w", encoding="utf-8", newline="") as f:
@@ -115,4 +148,16 @@ def actualizar_corpus():
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Recalcula keywords para corpus CSV")
+    parser.add_argument("--config", "-c", type=str, help="Ruta a book.json")
+    parser.add_argument("--csv", type=str, help="Ruta al CSV (anula config)")
+    parser.add_argument("--out", type=str, help="Ruta de salida (anula config)")
+    args = parser.parse_args()
+
+    cargar_config(args.config)
+    if args.csv:
+        ARCHIVO_CSV = os.path.abspath(args.csv)
+    if args.out:
+        ARCHIVO_SALIDA = os.path.abspath(args.out)
+
     actualizar_corpus()

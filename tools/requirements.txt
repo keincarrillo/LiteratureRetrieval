@@ -1,0 +1,6 @@
+# Dependencias del entorno de desarrollo de las herramientas.
+# Viven aisladas dentro del virtualenv para no tocar las librerías del host.
+#
+# Actualmente el flujo (filter.py y keywords.py) solo usa la librería estándar
+# de Python, así que no hay nada que instalar. Añade aquí cualquier paquete
+# externo que necesites en el futuro y ejecuta `make install`.
