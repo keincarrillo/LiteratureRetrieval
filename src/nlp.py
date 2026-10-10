@@ -136,8 +136,8 @@ def normalize_query(text: str, nlp: Optional["Language"] = None) -> str:
 
 
 def normalize_corpus(
-    raw_corpus_path: Union[str, Path] = "literature_raw_corpus.tsv",
-    output_path: Union[str, Path] = "literature_normalized_corpus.tsv",
+    raw_corpus_path: Union[str, Path] = "raw_corpus.tsv",
+    output_path: Union[str, Path] = "normalized_corpus.tsv",
     model_name: str = "es_core_news_md",
     batch_size: int = 100,
 ) -> Union["pd.DataFrame", List[dict]]:

@@ -27,7 +27,7 @@ OFFICIAL_COLUMNS = [
 
 def build_raw_corpus(
     corpus_dir: Union[str, Path] = "corpus",
-    output_path: Union[str, Path] = "literature_raw_corpus.tsv",
+    output_path: Union[str, Path] = "raw_corpus.tsv",
 ) -> Union["pd.DataFrame", List[dict]]:
     """Busca recursivamente archivos .csv y .tsv en corpus_dir, consolida los
 
