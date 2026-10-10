@@ -19,8 +19,8 @@ El objetivo del proyecto es permitir la busqueda de pasajes literarios relevante
   - `src/nlp.py`: Modulo de las Fases 2 y 3. Limpieza de texto, tokenizacion, filtrado gramatical por POS, lematizacion con spaCy y normalizacion de consultas.
 - `main.py`: Interfaz de linea de comandos (CLI) para ejecutar las distintas etapas del sistema.
 - `requirements.txt`: Dependencias del proyecto (pandas, spacy, scikit-learn, numpy).
-- `literature_raw_corpus.tsv`: Corpus crudo unificado generado en la Fase 1.
-- `literature_normalized_corpus.tsv`: Corpus procesado linguisticamente generado en la Fase 2.
+- `raw_corpus.tsv`: Corpus crudo unificado generado en la Fase 1.
+- `normalized_corpus.tsv`: Corpus procesado linguisticamente generado en la Fase 2.
 
 ---
 
@@ -41,7 +41,7 @@ pip install -r requirements.txt
 
 3. Descargar el modelo en espanol de spaCy:
 ```bash
-python -m spacy download es_core_news_md
+python -m spacy download es_core_news_lg
 ```
 
 ---
@@ -51,13 +51,13 @@ python -m spacy download es_core_news_md
 El flujo se controla a traves de `main.py`:
 
 ### 1. Consolidar el corpus crudo (Fase 1)
-Busca recursivamente todos los fragmentos en `corpus/`, unifica los separadores, asigna IDs continuos del 1 al 500, conserva las columnas requeridas (incluyendo keywords) y genera `literature_raw_corpus.tsv`:
+Busca recursivamente todos los fragmentos en `corpus/`, unifica los separadores, respeta los IDs originales del 1 al 500, conserva las columnas requeridas (incluyendo keywords) y genera `raw_corpus.tsv`:
 ```bash
 python main.py --phase1
 ```
 
 ### 2. Normalizar el corpus con spaCy (Fase 2)
-Toma `literature_raw_corpus.tsv`, procesa el campo de texto con el pipeline de spaCy (`nlp.pipe()`), elimina stopwords segun categorias sintacticas (articulos, preposiciones, conjunciones, pronombres), descarta signos de puntuacion, conserva categorias de contenido (sustantivos, verbos, adjetivos, adverbios), lematiza en minusculas y exporta `literature_normalized_corpus.tsv`:
+Toma `raw_corpus.tsv`, procesa el campo de texto con el pipeline de spaCy (`nlp.pipe()`), elimina stopwords segun categorias sintacticas (articulos, preposiciones, conjunciones, pronombres), descarta signos de puntuacion, conserva categorias de contenido (sustantivos, verbos, adjetivos, adverbios), lematiza en minusculas y exporta `normalized_corpus.tsv`:
 ```bash
 python main.py --phase2
 ```

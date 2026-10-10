@@ -37,12 +37,12 @@ def main():
     parser.add_argument(
         "--phase1",
         action="store_true",
-        help="Ejecutar Fase 1: Consolidar archivos de corpus en literature_raw_corpus.tsv",
+        help="Ejecutar Fase 1: Consolidar archivos de corpus en raw_corpus.tsv",
     )
     parser.add_argument(
         "--phase2",
         action="store_true",
-        help="Ejecutar Fase 2: Normalizar el corpus linguisticamente con spaCy",
+        help="Ejecutar Fase 2: Normalizar el corpus linguisticamente en normalized_corpus.tsv",
     )
     parser.add_argument(
         "--all",

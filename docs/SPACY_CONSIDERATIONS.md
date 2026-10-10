@@ -6,15 +6,15 @@ Este documento recopila discrepancias linguisticas, comportamientos del modelo `
 
 ## 1. Sobre-regularizacion en Verbos Irregulares
 
-### Caso detectado: Verbo "oler" (`olía` -> `oliar`)
-- **Texto original**: *"El vestibulo olia a legumbres cocidas..."* (1984, Fragmento 1).
-- **Resultado en spaCy**: `oliar` (lema inexistente en espanol).
-- **Causa**: El lematizador de spaCy utiliza heuristicas morfológicas basadas en sufijos. Al evaluar la terminacion en `-ía`, asume por regla general un infinitivo de primera conjugacion en `-iar` (como `enviar` -> `envia`), en lugar de mapearlo al verbo irregular `oler`.
-- **Contraste con otras formas**:
-  - `olía` -> `oliar`
-  - `huele` -> `oler`
-  - `oler` -> `oler`
-- **Impacto en recuperacion**: Si un usuario consulta *"oler a comida"* o *"olor a humo"*, la consulta no tendra coincidencia lexica con pasajes que contengan `olía` debido a la discrepancia de lemas (`oler` vs `oliar`).
+### Caso detectado: Verbo "oler" (`olía` -> `oliar` vs `oler`)
+- **Texto original**: *"El vestibulo olia a legumbres cocidas..."* (1984, Fragmento 401).
+- **Comportamiento en `es_core_news_md`**:
+  - Predice morfologia: `Mood=Ind|Number=Sing|Person=3|Tense=Pres` (Presente).
+  - Regla heuristica: Como cree que termina en `-a` de presente, asume un verbo en `-iar` y produce el lema erroneo `oliar`.
+- **Comportamiento en el modelo grande `es_core_news_lg`**:
+  - Predice morfologia: `Mood=Ind|Number=Sing|Person=3|Tense=Imp` (Imperfecto).
+  - Asigna el lema correcto: **`oler`**.
+- **Conclusion**: El modelo `es_core_news_lg` cuenta con un modelo morfologico mas preciso que resuelve esta anomalia. Se configuro `src/nlp.py` para priorizar `es_core_news_lg` automaticamente cuando este disponible.
 
 ---
 

@@ -13,13 +13,16 @@ _nlp = None
 
 
 def get_spacy():
-    """Carga y reutiliza el modelo de spaCy en espanol."""
+    """Carga y reutiliza el modelo de spaCy en espanol (preferencia: lg -> md -> sm)."""
     global _nlp
     if _nlp is None:
-        try:
-            _nlp = spacy.load("es_core_news_md", disable=["ner"])
-        except OSError:
-            _nlp = spacy.load("es_core_news_sm", disable=["ner"])
+        for model in ["es_core_news_lg", "es_core_news_md", "es_core_news_sm"]:
+            try:
+                _nlp = spacy.load(model, disable=["ner"])
+                print(f"[NLP] Modelo spaCy cargado exitosamente: {model}")
+                break
+            except OSError:
+                continue
     return _nlp
 
 
@@ -45,7 +48,10 @@ def normalize_query(text):
     return " ".join(tokenize_and_normalize(text))
 
 
-def normalize_corpus(raw_path="raw_corpus.tsv", output_path="normalized_corpus.tsv"):
+def normalize_corpus(
+    raw_path="raw_corpus.tsv",
+    output_path="normalized_corpus.tsv",
+):
     """Normaliza el campo text del corpus usando nlp.pipe() y conserva el resto."""
     with open(raw_path, "r", encoding="utf-8") as f:
         reader = csv.DictReader(f, delimiter="\t")

@@ -7,14 +7,14 @@ Lee este documento antes de realizar cambios o implementar modulos adicionales. 
 ## 1. Estado Actual del Repositorio
 
 - **Fase 1 (Completada)**:
-  - Archivo de salida: `literature_raw_corpus.tsv` (500 filas + 1 cabecera).
+  - Archivo de salida: `raw_corpus.tsv` (500 filas + 1 cabecera).
   - Modulo: `src/corpus.py`.
   - Generado a partir de 5 obras en `corpus/` (100 filas por obra).
   - Incluye 10 columnas oficiales: `fragment_id` (1 a 500), `book_id`, `title`, `author`, `chapter/position`, `text`, `language`, `source`, `url`, `keywords`.
 - **Fase 2 (Implementada en codigo)**:
   - Modulo: `src/nlp.py`.
-  - Pipeline de spaCy con filtrado estricto por POS y lematizacion.
-  - Archivo de salida esperado: `literature_normalized_corpus.tsv`.
+  - Pipeline de spaCy con filtrado estricto por POS y lematizacion (`es_core_news_lg`).
+  - Archivo de salida esperado: `normalized_corpus.tsv`.
 - **Fase 3 (Preparada)**:
   - Funcion expuesta: `normalize_query(text: str) -> str` en `src/nlp.py` para asegurar igualdad de preprocesamiento entre documentos y consultas.
 
@@ -24,7 +24,7 @@ Lee este documento antes de realizar cambios o implementar modulos adicionales. 
 
 - **Sin emojis**: El usuario solicito explicitamente no utilizar emojis en la documentacion ni en las respuestas.
 - **Sin Makefiles**: No agregar Makefiles en la raiz ni sugerir `make`. La interfaz oficial es el CLI de Python `main.py`.
-- **Formato TSV y UTF-8**: Todos los datasets generados (`literature_raw_corpus.tsv`, `literature_normalized_corpus.tsv`, `queries.tsv`, `qrels.tsv`, `rankings.tsv`) deben ser archivos delimitados por tabuladores (`\t`) en codificacion UTF-8 estandar.
+- **Formato TSV y UTF-8**: Todos los datasets generados (`raw_corpus.tsv`, `normalized_corpus.tsv`, `queries.tsv`, `qrels.tsv`, `rankings.tsv`) deben ser archivos delimitados por tabuladores (`\t`) en codificacion UTF-8 estandar.
 - **Columna `title` protegida**: La especificacion exige no lematizar ni podar el titulo; debe conservarse identico al original.
 - **Columna `keywords` preservada**: Las etiquetas de palabras clave deben conservarse intactas en los archivos TSV.
 
