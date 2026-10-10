@@ -8,13 +8,13 @@ Este documento define la estructura, el esquema de datos y los detalles tecnicos
 
 El corpus contiene un total de 500 fragmentos (100 fragmentos por obra) distribuidos en:
 
-| Directorio | Obra | Autor | Formato Origen | Separador |
-|---|---|---|---|---|
-| `corpus/1984/` | 1984 | George Orwell | `corpus_1984.csv` | Coma (`,`), con BOM UTF-8 |
-| `corpus/ElMundoDeSofia/` | El mundo de Sofia | Jostein Gaarder | `corpus_gaarder.csv` | Coma (`,`) |
-| `corpus/Levedad/` | La insoportable levedad del ser | Milan Kundera | `corpus_kundera.csv` | Coma (`,`) |
-| `corpus/MiLucha/` | Mi Lucha | Adolf Hitler | `corpus_301_400.tsv` | Tabulador (`\t`) |
-| `corpus/Odisea/` | La Odisea | Homero | `corpus_odisea.csv` | Coma (`,`) |
+| Directorio | Obra | Autor | Rango fragment_id | Formato Origen | Separador |
+|---|---|---|---|---|---|
+| `corpus/Levedad/` | La insoportable levedad del ser | Milan Kundera | 1 - 100 | `corpus_kundera.csv` | Coma (`,`) |
+| `corpus/Odisea/` | La Odisea | Homero | 101 - 200 | `corpus_odisea.csv` | Coma (`,`) |
+| `corpus/ElMundoDeSofia/` | El mundo de Sofia | Jostein Gaarder | 201 - 300 | `corpus_gaarder.csv` | Coma (`,`) |
+| `corpus/MiLucha/` | Mi Lucha | Adolf Hitler | 301 - 400 | `corpus_301_400.tsv` | Tabulador (`\t`) |
+| `corpus/1984/` | 1984 | George Orwell | 401 - 500 | `corpus_1984.csv` | Coma (`,`), con BOM UTF-8 |
 
 ---
 

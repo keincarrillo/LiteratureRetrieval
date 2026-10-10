@@ -34,7 +34,13 @@ Lee este documento antes de realizar cambios o implementar modulos adicionales. 
 
 - `corpus/1984/corpus_1984.csv` contiene BOM (`\ufeff`) en la primera columna (`fragment_id`). Usar siempre `utf-8-sig` para abrirlo.
 - `corpus/MiLucha/corpus_301_400.tsv` utiliza tabuladores (`\t`), mientras que los otros 4 libros usan comas (`,`).
-- Varios archivos originales comenzaban con `fragment_id = 1`. En el corpus consolidado, los IDs deben ser siempre secuenciales continuos del 1 al 500.
+- Los IDs originales de cada obra ya estaban asignados por rangos de 100 en 100:
+  - Levedad: 1 a 100
+  - La Odisea: 101 a 200
+  - El mundo de Sofia: 201 a 300
+  - Mi Lucha: 301 a 400
+  - 1984: 401 a 500
+- El consolidado simplemente conserva su `fragment_id` original y los ordena de menor a mayor (1 a 500).
 - La columna no estandar `context` (presente solo en 1984) se descarta.
 
 ---
