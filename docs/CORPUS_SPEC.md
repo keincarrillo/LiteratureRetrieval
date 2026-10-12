@@ -20,7 +20,7 @@ El corpus contiene un total de 500 fragmentos (100 fragmentos por obra) distribu
 
 ## 2. Esquema Oficial de Columnas (TSV)
 
-Todo archivo de corpus unificado (`raw_corpus.tsv` y `normalized_corpus.tsv`) respeta estrictamente 10 columnas en este orden:
+Todo archivo de corpus unificado (`literature_raw_corpus.tsv` y `literature_normalized_corpus.tsv`) respeta estrictamente 10 columnas en este orden:
 
 1. `fragment_id`: Identificador numerico entero unico y secuencial global (de 1 a 500).
 2. `book_id`: Identificador textual de la obra (ej. `orwell_1984`, `kundera_levedad`).
