@@ -18,7 +18,7 @@ OFFICIAL_COLUMNS = [
 ]
 
 
-def build_raw_corpus(corpus_dir="corpus", output_path="raw_corpus.tsv"):
+def build_raw_corpus(corpus_dir="corpus", output_path="literature_raw_corpus.tsv"):
     # 1. Buscar todos los archivos csv y tsv recursivamente
     files = glob.glob(f"{corpus_dir}/**/*.csv", recursive=True) + glob.glob(
         f"{corpus_dir}/**/*.tsv", recursive=True

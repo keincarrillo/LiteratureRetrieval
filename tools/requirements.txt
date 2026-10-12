@@ -1,0 +1,2 @@
+# Comparte las dependencias del proyecto con el entorno del Makefile.
+-r ../requirements.txt

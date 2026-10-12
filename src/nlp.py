@@ -49,8 +49,8 @@ def normalize_query(text):
 
 
 def normalize_corpus(
-    raw_path="raw_corpus.tsv",
-    output_path="normalized_corpus.tsv",
+    raw_path="literature_raw_corpus.tsv",
+    output_path="literature_normalized_corpus.tsv",
 ):
     """Normaliza el campo text del corpus usando nlp.pipe() y conserva el resto."""
     with open(raw_path, "r", encoding="utf-8") as f:
