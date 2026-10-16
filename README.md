@@ -73,6 +73,26 @@ Aplica exactamente el mismo pipeline linguisticamente a una consulta de texto li
 python main.py --query "descripcion de una tormenta violenta en alta mar"
 ```
 
+### 5. Recuperar fragmentos literarios mediante VSM (Fase 5)
+Recibe una consulta en lenguaje natural, la normaliza mediante `nlpFIX.py` y utiliza los modelos VSM previamente entrenados para recuperar los 10 fragmentos literarios más similares mediante similitud coseno. Muestra los resultados en consola y guarda automáticamente un archivo TXT con los fragmentos completos, sus puntuaciones, metadatos y palabras clave en `results/`.
+
+Ejecutar con la configuración predeterminada (TF-IDF y unigramas):
+```bash
+python -m src.retrieval -q "que relacion tiene la vida y la muerte?"
+```
+
+Seleccionar la representación y el tipo de n-grama:
+```bash
+python -m src.retrieval -q "que relacion tiene la vida y la muerte?" -r tfidf -f bigram
+```
+
+Parámetros disponibles:
+- `-q`: consulta en lenguaje natural (obligatorio).
+- `-r`: representación VSM (`frequency`, `binary`, `tfidf`). Por defecto: `tfidf`.
+- `-f`: características (`unigram`, `bigram`). Por defecto: `unigram`.
+
+Los modelos se cargan desde `models/` sin necesidad de volver a entrenarlos. Cada ejecución genera un TXT independiente en `results/`.
+
 ---
 
 ## Reglas de normalizacion linguistica
