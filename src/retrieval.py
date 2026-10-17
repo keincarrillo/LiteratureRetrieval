@@ -10,7 +10,7 @@ from pathlib import Path
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 
-from .nlpFIX import normalize_query
+from .nlp import normalize_query
 from .vsm import FEATURES, REPRESENTATIONS, load_model
 
 
