@@ -27,6 +27,11 @@ def get_spacy():
                 break
             except OSError:
                 continue
+        if _nlp is None:
+            raise RuntimeError(
+                "Ningún modelo de spaCy en español está instalado. "
+                "Instálalo con: python -m spacy download es_core_news_lg"
+            )
     return _nlp
 
 
