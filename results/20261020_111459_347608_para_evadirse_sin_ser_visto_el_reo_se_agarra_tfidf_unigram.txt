@@ -1,0 +1,189 @@
+RESULTADOS DE RECUPERACIÓN DE INFORMACIÓN - FASE 5
+========================================================================
+Consulta original    : Para evadirse sin ser visto, el reo se agarra al lomo de un animal lanudo y cruza la boca de la guarida
+Consulta normalizada : evadir ser ver reo agarrar lomo animal lanudo cruzar boca guarida
+Representación VSM   : tfidf
+Características      : unigram
+Resultados obtenidos : 10
+========================================================================
+
+RESULTADO 1
+------------------------------------------------------------------------
+Fragmento ID     : 86
+Similitud coseno : 0.102492
+Obra             : La insoportable levedad del ser
+Autor            : Milan Kundera
+Posición         : Séptima Parte - La sonrisa de Karenin - Cap. 2
+Palabras clave   : tomas, teresa, karenin, azar, alma, infidelidad, ocupacion_rusa, disidencia_politica, religion_fe
+Book ID          : kundera_levedad
+Idioma           : es
+Fuente           : Lectulandia
+URL              : https://ww3.lectulandia.com/book/la-insoportable-levedad-del-ser/
+
+TEXTO COMPLETO:
+Se siente aislada en su amor por el perro. Piensa con una sonrisa triste que tiene que mantenerlo en secreto, más que si se tratase de una infidelidad. La gente ve con malos ojos el amor por los perros. Si la vecina se enterase de que le es infiel a Tomás, le daría una palmadita en la espalda en señal de secreta complicidad. Así que sigue su camino con las terneras, que van frotándose mutuamente las ancas, y piensa que son unos animalitos muy agradables. Tranquilas, ingenuas, algunas veces puerilmente alegres: parecen señoras gordas de cincuenta años que fingen tener catorce. No hay nada más conmovedor que las vacas cuando juegan. Teresa las mira con simpatía y piensa (es una idea recurrente desde hace ya dos años) que la humanidad vive a costa de las vacas, del mismo modo en que la tenia vive a costa del hombre: se ha enganchado a su teta como una sanguijuela. El hombre es un parásito de la vaca, así definiría probablemente un no-hombre al hombre en su zoología. Podemos considerar esta definición como una simple broma y reírnos amablemente de ella. Pero cuando Teresa se ocupa seriamente de ella, se encuentra en una situación comprometida: sus ideas son peligrosas y la alejan de la humanidad. Ya en el Génesis, Dios le confió al hombre el dominio sobre animales, pero esto podemos entenderlo en el sentido de que sólo le cedió ese dominio. El hombre no era el propietario, sino un administrador del planeta que, algún día, debería rendir cuentas de esa administración. Descartes dio un paso decisivo: hizo del hombre el «señor y propietario de la naturaleza». Pero existe sin duda cierta profunda coincidencia en que haya sido precisamente él quien negó definitivamente que los animales tuvieran alma: el hombre es el propietario y el señor mientras que el animal, dice Descartes, es sólo un autómata, una máquina viviente, «machina animata». Si el animal se queja, no se trata de un quejido, es el chirrido de un mecanismo que funciona mal. Cuando chirría la rueda de un carro, no significa que el eje sufra, sino que no está engrasado. Del mismo modo hemos de entender el llanto de un animal y no entristecernos cuando en un laboratorio experimentan con un perro y lo trocean vivo. Las terneras pastan en el prado, Teresa está sentada sobre un tocón y Karenin se apretuja contra ella con la cabeza sobre sus rodillas. Y Teresa se acuerda de que una vez, quizás hace diez años, leyó una noticia de dos líneas en el periódico: decía que en una ciudad rusa habían matado a tiros a todos los perros del lugar. Aquella noticia, poco llamativa y aparentemente insignificante, le hizo sentir por primera vez miedo de ese país vecino, excesivamente grande. Aquella noticia fue una anticipación de todo lo que sucedió después: durante los primeros años que siguieron a la invasión rusa, no se podía hablar aún de terror. Dado que casi todo el país estaba en contra del régimen de ocupación, los rusos tuvieron que buscar a personas nuevas entre la población checa y auparlas al poder. ¿Pero dónde iban a buscarlas si tanto la fe en el comunismo como el amor hacia Rusia habían muerto? Las buscaron entre quienes deseaban vengarse de la vida por algún motivo. Hacía falta unificar, cultivar y mantener alerta su agresividad. Hacía falta ejercitarlas primero en objetivos provisionales. Esos objetivos fueron los animales.
+
+========================================================================
+
+RESULTADO 2
+------------------------------------------------------------------------
+Fragmento ID     : 478
+Similitud coseno : 0.086352
+Obra             : 1984
+Autor            : George Orwell
+Posición         : Parte Tres, capítulo I; páginas 170–171
+Palabras clave   : Winston, odio, telepantalla, Habitación 101
+Book ID          : orwell_1984
+Idioma           : es
+Fuente           : Internet Archive
+URL              : https://archive.org/details/1984-george-orwell_20260725/mode/2up
+
+TEXTO COMPLETO:
+Se abrió la puerta de nuevo y entró otro preso cuyo aspecto le causó un escalofrío a Winston. Era un hombre de aspecto vulgar, quizás un ingeniero o un técnico. Pero lo sorprendente en él era su figura esquelética. Su delgadez era tan exagerada que la boca y los ojos parecían de un tamaño desproporcionado y en sus ojos se almacenaba un intenso y criminal odio contra algo o contra alguien. El individuo se sentó en el banco a poca distancia de Winston. Éste no volvió a mirarle, pero la cara de calavera se le había quedado tan grabada como si la tuviera continuamente frente a sus ojos. De pronto comprendió de qué se trataba. Aquel hombre se moría de hambre. Lo mismo pareció ocurrírseles casi a la vez a cuantos allí se hallaban. Se produjo un leve movimiento por todo el banco. El hombre de la cara de ratón miraba de cuando en cuando al esquelético y desviaba en seguida la mirada con aire culpable para volverse a fijarse en él irresistiblemente atraído. Por fin se levantó, cruzó pesadamente la celda, se rebuscó en el bolsillo del «mono» y con aire tímido sacó un mugriento mendrugo de pan y se lo tendió al hambriento. La telepantalla rugió furiosa. El de la cara de ratón volvió a su sitio de un brinco. El esquelético se había llevado inmediatamente las manos detrás de la espalda como para demostrarle a todo el mundo que se había negado a aceptar el ofrecimiento. —¡Bumstead! —gritó la voz de un modo ensordecedor—. ¡2713 Bumstead J! Tira ese pedazo de pan. El individuo tiró el mendrugo al suelo. —Ponte de pie de cara a la puerta y sin hacer ningún movimiento. El hombre obedeció mientras le temblaban los bolsones de sus mejillas. Se abrió la puerta de golpe y entró el joven oficial, que se apartó para dejar pasar a un guardia achaparrado con enormes brazos y hombros. Se colocó frente al hombre del mendrugo y, a una orden muda del oficial, le lanzó un terrible puñetazo a la boca apoyándolo con todo el peso de su cuerpo. La fuerza del golpe empujó al individuo hasta la otra pared de la celda. Se cayó junto al retrete. Le brotaba una sangre negruzca de la boca y de la nariz. Después, gimiendo débilmente, consiguió ponerse en pie. Entre un chorro de sangre y saliva, se le cayeron de la boca las dos mitades de una dentadura postiza. Los presos estaban muy quietos, todos ellos con las manos cruzadas sobre las rodillas. El hombre ratonil volvió a su sitio. Se le oscurecía la carne en uno de los lados de la cara. Se le hinchó la boca hasta formar una masa informe con un agujero negro en medio. Sus ojos grises seguían moviéndose, sintiéndose más culpable que nunca y como tratando de averiguar cuánto lo despreciaban los otros por aquella humillación. Se abrió la puerta. Con un pequeño gesto, el oficial señaló al hombre esquelético. —Habitación 101 —dijo.
+
+========================================================================
+
+RESULTADO 3
+------------------------------------------------------------------------
+Fragmento ID     : 406
+Similitud coseno : 0.073408
+Obra             : 1984
+Autor            : George Orwell
+Posición         : Parte Uno, capítulo I; páginas 15–16
+Palabras clave   : Winston, O'Brien, Gran Hermano, Partido, Hermandad, Dos Minutos de Odio, verdad, Odio, esperanza, sentimientos
+Book ID          : orwell_1984
+Idioma           : es
+Fuente           : Internet Archive
+URL              : https://archive.org/details/1984-george-orwell_20260725/mode/2up
+
+TEXTO COMPLETO:
+Entonces, todo el grupo prorrumpió en un canto rítmico, lento y profundo: «¡Ge-Hache. Ge-Hache... Ge-Hache!», dejando una gran pausa entre la G y la H. Era un canto monótono y salvaje en cuyo fondo parecían oírse pisadas de pies desnudos y el batir de los tam-tam. Este canturreo duró unos treinta segundos. Era un estribillo que surgía en todas las ocasiones de gran emoción colectiva. En parte, era una especie de himno a la sabiduría y majestad del Gran Hermano; pero, más aún, constituía aquello un procedimiento de autohipnosis, un modo deliberado de ahogar la conciencia mediante un ruido rítmico. A Winston parecían enfriársele las entrañas. En los Dos Minutos de Odio, no podía evitar que la oleada emotiva le arrastrase, pero este infrahumano canturreo —«¡G-H... G-H... G-H!»— siempre le llenaba de horror. Desde luego, se unía al coro; esto era obligatorio: Controlar los verdaderos sentimientos y hacer lo mismo que hicieran los demás era una reacción natural. Pero durante un par de segundos, sus ojos podían haberlo delatado. Y fue precisamente en esos instantes cuando ocurrió aquello que a él le había parecido significativo... si es que había ocurrido. Momentáneamente, sorprendió la mirada de O'Brien. Éste se había levantado; se había quitado las gafas volviéndoselas a colocar con su delicado y característico gesto. Pero durante una fracción de segundo, se encontraron sus ojos con los de Winston y éste supo —sí, lo supo— que O'Brien pensaba lo mismo que él. Un inconfundible mensaje se había cruzado entre ellos. Era como si sus dos mentes se hubieran abierto y los pensamientos hubieran volado de la una a la otra a través de los ojos. «Estoy contigo», parecía estarle diciendo O'Brien. «Sé en qué estás pensando. Conozco tu asco, tu odio, tu disgusto. Pero no te preocupes; ¡estoy contigo!» Y luego la fugacísima comunicación se había interrumpido y la expresión de O'Brien volvió a ser tan inescrutable como la de todos los demás. Esto fue todo y ya no estaba seguro de si había sucedido efectivamente. Tales incidentes nunca tenían consecuencias para Winston. Lo único que hacían era mantener viva en él la creencia o la esperanza de que otros, además de él, eran enemigos del Partido. Quizás, después de todo, resultaran ciertos los rumores de extensas conspiraciones subterráneas; quizás existiera de verdad la Hermandad. Era imposible, a pesar de los continuos arrestos y las constantes confesiones y ejecuciones, estar seguro de que la Hermandad no era sencillamente un mito. Algunos días lo creía Winston; otros, no. No había pruebas, sólo destellos que podían significar algo o no significar nada: retazos de conversaciones oídas al pasar, algunas palabras garrapateadas en las paredes de los lavabos, y, alguna vez, al encontrarse dos desconocidos, ciertos movimientos de las manos que podían parecer señales de reconocimiento. Pero todo ello eran suposiciones que podían resultar totalmente falsas. Winston había vuelto a su cubículo sin mirar otra vez a O'Brien. Apenas cruzó por su mente la idea de continuar este momentáneo contacto. Hubiera sido extremadamente peligroso incluso si hubiera sabido él cómo entablar esa relación. Durante uno o dos segundos, se había cruzado entre ellos una mirada equívoca, y eso era todo. Pero incluso así, se trataba de un acontecimiento memorable en el aislamiento casi hermético en que uno tenía que vivir.
+
+========================================================================
+
+RESULTADO 4
+------------------------------------------------------------------------
+Fragmento ID     : 85
+Similitud coseno : 0.072999
+Obra             : La insoportable levedad del ser
+Autor            : Milan Kundera
+Posición         : Séptima Parte - La sonrisa de Karenin - Cap. 2
+Palabras clave   : teresa, karenin, religion_fe
+Book ID          : kundera_levedad
+Idioma           : es
+Fuente           : Lectulandia
+URL              : https://ww3.lectulandia.com/book/la-insoportable-levedad-del-ser/
+
+TEXTO COMPLETO:
+En el mismo comienzo del Génesis está escrito que Dios creó al hombre para confiarle el dominio sobre los pájaros, los peces y los animales. Claro que el Génesis fue escrito por un hombre y no por un caballo. No hay seguridad alguna de que Dios haya confiado efectivamente al hombre el dominio de otros seres. Más bien parece que el hombre inventó a Dios para convertir en sagrado el dominio sobre la vaca y el caballo, que había usurpado. Sí, el derecho a matar un ciervo o una vaca es lo único en lo que la humanidad coincide fraternalmente, incluso en medio de las guerras más sangrientas. Ese derecho nos parece evidente porque somos nosotros los que nos encontramos en la cima de esa jerarquía. Pero bastaría con que entrara en el juego un tercero, por ejemplo un visitante de otro planeta al que Dios le hubiese dicho: «Dominarás a los seres de todas las demás estrellas», y toda la evidencia del Génesis se volvería de pronto problemática. Es posible que el hombre uncido a un carro por un marciano, eventualmente asado a la parrilla por un ser de la Vía Láctea, recuerde entonces la chuleta de ternera que estaba acostumbrado a trocear en su plato y le pida disculpas (¡tarde!) a la vaca. Teresa va con la manada de terneras, las hace caminar delante de ella, a cada rato debe imponer disciplina a alguna de ellas porque las vacas jóvenes son alegres, se escapan del camino y corren hacia los campos. Karenin la acompaña. Hace ya dos años que va con ella a diario a los prados. Siempre le había resultado divertido tratar a las terneras con severidad, ladrarles e insultarlas. (Su Dios le había confiado el dominio sobre las vacas y está orgulloso de ello.) Pero esta vez anda con grandes dificultades y salta sólo con tres patas; en la cuarta tiene una herida que sangra. Teresa se agacha hacia él a cada rato y le acaricia el lomo. A los catorce días de la operación estaba claro que el cáncer no se había detenido y que Karenin estaría cada vez peor. Por el camino encuentran a una vecina que, con botas de goma, va hacia el establo. La vecina se detiene: —¿Qué le pasa a su perro? ¡Parece que cojea! Teresa dice: —Tiene cáncer. No hay salvación —y siente una opresión en la garganta que le impide hablar. La vecina ve las lágrimas de Teresa y casi se enfada: —¡Por Dios, no va a ponerse a llorar por un perro! No lo dice con mala intención, es una buena mujer y más bien pretende consolar a Teresa con sus palabras. Teresa lo sabe, lleva además suficiente tiempo en la aldea para comprender que, si los campesinos amasen a cada conejo como ella ama a Karenin, no podrían matar a ninguno y morirían pronto de hambre con animales y todo. Pero, aun así, las palabras de la vecina le suenan a enemistad. -Ya sé -responde sin protestar, pero se aleja rápidamente de ella y sigue su camino.
+
+========================================================================
+
+RESULTADO 5
+------------------------------------------------------------------------
+Fragmento ID     : 479
+Similitud coseno : 0.072163
+Obra             : 1984
+Autor            : George Orwell
+Posición         : Parte Tres, capítulo I; páginas 172–173
+Palabras clave   : Winston, Julia, O'Brien, verdad, terror, dolor, esperanza, telepantalla, Habitación 101
+Book ID          : orwell_1984
+Idioma           : es
+Fuente           : Internet Archive
+URL              : https://archive.org/details/1984-george-orwell_20260725/mode/2up
+
+TEXTO COMPLETO:
+Los dos guardias lo sujetaron por el brazo, pero en ese momento el preso se tiró al suelo y se agarró a una de las patas de hierro que sujetaban el banco. Lanzaba un aullido que parecía de algún animal. Los guardias tiraban de él. Pero se aferraba con asombrosa fuerza. Estuvieron forcejeando así quizá unos veinte segundos. Los presos seguían inmóviles con las manos cruzadas sobre las rodillas mirando fijamente frente a ellos. El aullido se cortó; el hombre sólo tenía ya alientos para sujetarse. Entonces se oyó un grito diferente. Un guardia le había roto de una patada los dedos de una mano. Lo pusieron de pie alzándolo como un pelele. —Habitación 101 —dijo el oficial. Y se lo llevaron al hombre, que apenas podía apoyarse en el suelo y que se sujetaba con la otra la mano partida. Había perdido por completo los ánimos. Pasó mucho tiempo. Si había sido media noche cuando se llevaron al hombre de la cara de calavera, era ya por la mañana; si había sido por la mañana, ahora sería por la tarde. Winston estaba solo desde hacía varias horas. Le producía tal dolor estarse sentado en el estrecho banco que se atrevió a levantarse de cuando en cuando y dar unos pasos por la celda sin que la telepantalla se lo prohibiera. El mendrugo de pan seguía en el suelo, —en el mismo sitio donde lo había tirado el individuo de cara ratonil. Al principio, necesitó Winston esforzarse mucho para no mirarlo, pero ya no tenía hambre, sino sed. Se le había puesto la boca pegajosa y de un sabor malísimo. El constante zumbido y la invariable luz blanca le causaban una sensación de mareo y de tener vacía la cabeza. Cuando no podía resistir más el dolor de los huesos, se levantaba, pero volvía a sentarse en seguida porque estaba demasiado mareado para permanecer en pie. En cuanto conseguía dominar sus sensaciones físicas, le volvía el terror. A veces pensaba con leve esperanza en O'Brien y en la hoja de afeitar. Bien pudiera llegar la hoja escondida en el alimento que le dieran, si es que llegaban a darle alguno. En Julia pensaba menos. Estaría sufriendo, quizás más que él. Probablemente estaría chillando de dolor en este mismo instante. Pensó: «Si pudiera salvar a Julia duplicando mi dolor, ¿lo haría? Sí, lo haría». Esto era sólo una decisión intelectual, tomada porque sabia que su deber era ese; pero, en verdad, no lo sentía. En aquel sitio no se podía sentir nada excepto el dolor físico y la anticipación de venideros dolores. Además, ¿era posible, mientras se estaba sufriendo realmente, desear que por una u otra razón le aumentara a uno el dolor? Pero a esa pregunta no estaba él todavía en condiciones de responder. Las botas volvieron a acercarse. Se abrió la puerta. Entró O'Brien. Winston se puso en pie. El choque emocional de ver a aquel hombre le hizo abandonar toda preocupación. Por primera vez en muchos años, olvidó la presencia de la telepantalla.
+
+========================================================================
+
+RESULTADO 6
+------------------------------------------------------------------------
+Fragmento ID     : 423
+Similitud coseno : 0.070886
+Obra             : 1984
+Autor            : George Orwell
+Posición         : Parte Uno, capítulo VI; páginas 49–50
+Palabras clave   : Winston, Katharine, Partido, proles, sistema, muerte, vida
+Book ID          : orwell_1984
+Idioma           : es
+Fuente           : Internet Archive
+URL              : https://archive.org/details/1984-george-orwell_20260725/mode/2up
+
+TEXTO COMPLETO:
+Nuestro peor enemigo, reflexionó Winston, es nuestro sistema nervioso. En cualquier momento, la tensión interior puede traducirse en cualquier síntoma visible. Pensó en un hombre con quien se había cruzado en la calle semanas atrás: un hombre de aspecto muy corriente, un miembro del Partido de treinta y cinco a cuarenta años, alto y delgado, que llevaba una cartera de mano. Estaban separados por unos cuantos metros cuando el lado izquierdo de la cara de aquel hombre se contrajo de pronto en una especie de espasmo. Esto volvió a ocurrir en el momento en que se cruzaban; fue sólo un temblor rapidísimo como el disparo de un objetivo de cámara fotográfica, pero sin duda se trataba de un tic habitual. Winston recordaba haber pensado entonces: el pobre hombre está perdido. Y lo aterrador era que el movimiento de los músculos era inconsciente. El peligro mortal por excelencia era hablar en sueños. Contra eso no había remedio. Contuvo la respiración y siguió escribiendo: Entré con ella en el portal y cruzamos un patio para bajar luego a una cocina que estaba en los sótanos. Había una cama contra la pared, y una lámpara en la mesilla con muy poca luz Ella... Le rechinaban los dientes. Le hubiera gustado escupir. A la vez que en la mujer del sótano, pensó Winston en Katharine, su esposa. Winston estaba casado; es decir, había estado casado. Probablemente seguía estándolo, pues no sabía que su mujer hubiera muerto. Le pareció volver a aspirar el insoportable olor de la cocina del sótano, un olor a insectos, ropa sucia y perfume baratísimo; pero, sin embargo, atraía, ya que ninguna mujer del Partido usaba perfume ni podía uno imaginársela perfumándose. Solamente los proles se perfumaban, y ese olor evocaba en la mente, de un modo inevitable, la fornicación. Cuando estuvo con aquella mujer, fue la primera vez que había caído Winston en dos años aproximadamente. Por supuesto, toda relación con prostitutas estaba prohibida, pero se admitía que alguna vez, mediante un acto de gran valentía, se permitiera uno infringir la ley. Era peligroso pero no un asunto de vida o muerte, porque ser sorprendido con una prostituta sólo significaba cinco años de trabajos forzados. Nunca más de cinco años con tal de que no se hubiera cometido otro delito a la vez. Lo cual resultaba estupendo ya que había la posibilidad de que no le descubrieran a uno. Los barrios pobres abundaban en mujeres dispuestas a venderse. El precio de algunas era una botella de ginebra, bebida que se suministraba a los proles. Tácitamente, el Partido se inclinaba a estimular la prostitución como salida de los instintos que no podían suprimirse. Esas juergas no importaban políticamente ya que eran furtivas y tristes y sólo implicaban a mujeres de una clase sumergida y despreciada. El crimen imperdonable era la promiscuidad entre miembros del Partido. Pero —aunque éste era uno de los crímenes que los acusados confesaban siempre en las purgas— era casi imposible imaginar que tal desafuero pudiera suceder.
+
+========================================================================
+
+RESULTADO 7
+------------------------------------------------------------------------
+Fragmento ID     : 250
+Similitud coseno : 0.070249
+Obra             : El mundo de Sofía
+Autor            : Jostein Gaarder
+Posición         : Descartes
+Palabras clave   : dios_religion, alma_cuerpo, libertad, razon_sentidos, naturaleza_materia, socrates_platon_aristoteles, filosofos_modernos
+Book ID          : gaarder_sofia
+Idioma           : es
+Fuente           : Lectulandia
+URL              : https://ww3.lectulandia.com/book/el-mundo-de-sofia/
+
+TEXTO COMPLETO:
+—Y con esto la Creación de Dios se dividió en dos. —Exactamente. Decimos que Descartes es un dualista, es decir que realiza una clara bipartición entre la realidad espiritual y la realidad extensa. Sólo el ser humano tiene alma. Los animales pertenecen plenamente a la realidad extensa. Su vida y sus movimientos se realizan mecánicamente. Descartes consideró a los animales como una especie de autómatas complejos. En cuanto a la realidad extensa tiene, pues, un concepto totalmente mecanicista de la realidad, exactamente como los materialistas. —Dudo mucho de que Hermes sea una máquina o un autómata. Descartes seguramente no llegaría nunca a sentir cariño por ningún animal. ¿Y nosotros mismos? ¿También somos autómatas? —Sí y no. Descartes llegaría a pensar que el hombre es un «ser dual», que piensa pero que también ocupa espacio; lo que significa que el hombre tiene un alma y al mismo tiempo un cuerpo extenso. Aristóteles y San Agustín ya habían dicho algo parecido. Ellos opinaban que el hombre tiene un cuerpo exactamente como los animales, pero también un alma como los ángeles. Según Descartes, el cuerpo humano es una pieza de mecánica. Pero el hombre también tiene un alma que puede actuar completamente libre en relación con el cuerpo. Los procesos corporales no tienen tal libertad, sino que siguen sus propias leyes. Pero lo que pensamos con la razón no ocurre en el cuerpo, sino en el alma, que está totalmente libre en relación con la realidad extensa. A lo mejor debo añadir que Descartes no excluía la posibilidad de que también los animales pudieran pensar. Pero si poseen esa capacidad entonces la misma bipartición entre «pensamiento» y «extensión» también tiene que ser válida para ellos. —De eso ya hemos hablado. Si decido ir corriendo a coger el autobús, entonces se pone en marcha el autómata. Y si a pesar de ello pierdo el autobús, las lágrimas empiezan a brotar. —Ni siquiera Descartes podía negar que ocurre constantemente una alternancia de ese tipo entre el alma y el cuerpo. Opinaba que mientras el alma se encuentra en el cuerpo, está relacionada con éste mediante un órgano cerebral especial que él llamaba «glándula pineal», en la que se está realizando una continua alternancia entre «espíritu» y «materia». De esta forma el alma se deja confundir constantemente por sentimientos y afectos relacionados con las necesidades del cuerpo. No obstante, el alma puede independizarse de esos impulsos «bajos» y actuar libremente en relación al cuerpo. La meta es que la razón se encargue del control. Porque aunque la tripa me duela un montón, la suma de los ángulos de un triángulo sigue siendo 180º. De ese modo el pensamiento tiene la capacidad de elevarse por encima de las necesidades del cuerpo y actuar «razonablemente». En ese sentido el alma es totalmente superior al cuerpo. Nuestras piernas podrán hacerse viejas y pesadas, los dientes se nos podrán caer, pero 2 + 2 seguirán siendo 4 mientras nosotros sigamos conservando la razón. Pues la razón no se vuelve vieja y pesada. Es nuestro cuerpo el que envejece. Para Descartes es la propia razón la que es el «alma». Afectos y sentimientos más bajos tales como el deseo y el odio están estrechamente relacionados con las funciones del cuerpo, y por ello con la realidad extensa.
+
+========================================================================
+
+RESULTADO 8
+------------------------------------------------------------------------
+Fragmento ID     : 88
+Similitud coseno : 0.066860
+Obra             : La insoportable levedad del ser
+Autor            : Milan Kundera
+Posición         : Séptima Parte - La sonrisa de Karenin - Cap. 3
+Palabras clave   : tomas, teresa, karenin, cuerpo, pesadillas, campo_pueblo
+Book ID          : kundera_levedad
+Idioma           : es
+Fuente           : Lectulandia
+URL              : https://ww3.lectulandia.com/book/la-insoportable-levedad-del-ser/
+
+TEXTO COMPLETO:
+Karenin parió dos panecillos y una abeja. Miraba sorprendido a su curiosa prole. Los panecillos se comportaban con serenidad, pero la abeja se puso a dar vueltas mareada y después se echó a volar y se marchó. Fue un sueño que tuvo Teresa. En cuanto se despertaron se lo contó a Tomás y ambos encontraron en él una especie de consuelo: aquel sueño transformaba la enfermedad de Karenin en un embarazo y el drama del parto en un resultado a la vez ridículo y tierno: dos panecillos y una abeja. Se apoderó de ella una infundada esperanza. Se levantó y se vistió. Aquí, en el pueblo, el día también empezaba yendo a comprar a la tienda leche, pan, panecillos. Pero esta vez, cuando llamó a Karenin para que la acompañara, apenas si levantó la cabeza. Era la primera vez que se negaba a participar en una ceremonia que antes era el primero en exigir. De modo que se fue sin él. «¿Dónde está Karenin?», preguntó la dependienta, que ya tenía el panecillo preparado para él. Esta vez se lo llevó Teresa en la bolsa. Nada más llegar a la puerta lo sacó y se lo enseñó. Quería que fuera a por él. Pero se quedó acostado sin moverse. Tomás se dio cuenta de lo afectada que estaba Teresa. Cogió el panecillo con los dientes y se puso a gatas delante de Karenin. Se acercó lentamente a él. Karenin lo miraba, parecía que alguna chispa de interés le iluminara los ojos, pero no se levantaba. Tomás acercó su cara justo hasta la boca de él. Sin mover el cuerpo, el perro cogió con los dientes la parte del panecillo que sobresalía de la boca de Tomás. Entonces Tomás soltó el panecillo para que Karenin se lo quedase todo. Tomás, que seguía a gatas, retrocedió, se agachó y empezó a gruñir. Simulaba querer pelear por el panecillo. En ese momento el perro le respondió a su amo con un gruñido. ¡Por fin! ¡Cuánto habían tenido que esperar! ¡Karenin tiene ganas de jugar! ¡Karenin aún tiene ganas de vivir! Aquel gruñido era la sonrisa de Karenin y ellos querían que la sonrisa durase el mayor tiempo posible. Por eso Tomás volvió a acercarse a él a gatas y mordió un trozo de pan que sobresalía de la boca del perro. Sus caras estaban juntas, Tomás sentía el olor del aliento del perro y en la cara le hacían cosquillas los largos pelos que le crecían en el hocico a Karenin. El perro volvió a gruñir y dio un tirón con la boca. Cada uno se quedó con una mitad del panecillo en la boca. Y entonces Karenin volvió a cometer un viejo error. Soltó su mitad del panecillo y quiso apoderarse de la mitad que tenía su amo en la boca. Olvidó, como siempre, que Tomás no era un perro y tenía manos. Tomás no soltó el panecillo de la boca y levantó del suelo la mitad que Karenin había dejado caer.
+
+========================================================================
+
+RESULTADO 9
+------------------------------------------------------------------------
+Fragmento ID     : 402
+Similitud coseno : 0.064645
+Obra             : 1984
+Autor            : George Orwell
+Posición         : Parte Uno, capítulo I; páginas 7–8
+Palabras clave   : Winston, Ministerio del Amor, Minimor, Amor, telepantalla, Ginebra de la Victoria
+Book ID          : orwell_1984
+Idioma           : es
+Fuente           : Internet Archive
+URL              : https://archive.org/details/1984-george-orwell_20260725/mode/2up
+
+TEXTO COMPLETO:
+El Ministerio del Amor era terrorífico. No tenía ventanas en absoluto. Winston nunca había estado dentro del Minimor, ni siquiera se había acercado a medio kilómetro de él. Era imposible entrar allí a no ser por un asunto oficial y en ese caso había que pasar por un laberinto de caminos rodeados de alambre espinoso, puertas de acero y ocultos nidos de ametralladoras. Incluso las calles que conducían a sus salidas extremas, estaban muy vigiladas por guardias, con caras de gorila y uniformes negros, armados con porras. Winston se volvió de pronto. Había adquirido su rostro instantáneamente la expresión de tranquilo optimismo que era prudente llevar al enfrentarse con la telepantalla. Cruzó la habitación hacia la diminuta cocina. Por haber salido del Ministerio a esta hora tuvo que renunciar a almorzar en la cantina y en seguida comprobó que no le quedaban víveres en la cocina a no ser un mendrugo de pan muy oscuro que debía guardar para el desayuno del día siguiente. Tomó de un estante una botella de un líquido incoloro con una sencilla etiqueta que decía: Ginebra de la Victoria. Aquello olía a medicina, algo así como el espíritu de arroz chino. Winston se sirvió una tacita, se preparó los nervios para el choque, y se lo tragó de un golpe como si se lo hubieran recetado. Al momento, se le volvió roja la cara y los ojos empezaron a llorarle. Este líquido era como ácido nítrico; además, al tragarlo, se tenía la misma sensación que si le dieran a uno un golpe en la nuca con una porra de goma. Sin embargo, unos segundos después, desaparecía la incandescencia del vientre y el mundo empezaba a resultar más alegre. Winston sacó un cigarrillo de una cajetilla sobre la cual se leía: Cigarrillos de la Victoria, y como lo tenía cogido verticalmente por distracción, se le vació en el suelo. Con el próximo pitillo tuvo ya cuidado y el tabaco no se salió. Volvió al cuarto de estar y se sentó ante una mesita situada a la izquierda de la telepantalla. Del cajón sacó un portaplumas, un tintero y un grueso libro en blanco de tamaño in-quarto, con el lomo rojo y cuyas tapas de cartón imitaban el mármol. Por alguna razón la telepantalla del cuarto de estar se encontraba en una posición insólita. En vez de hallarse colocada, como era normal, en la pared del fondo, desde donde podría dominar toda la habitación, estaba en la pared más larga, frente a la ventana. A un lado de ella había una alcoba que apenas tenía fondo, en la que se había instalado ahora Winston. Era un hueco que, al ser construido el edificio, habría sido calculado seguramente para alacena o biblioteca. Sentado en aquel hueco y situándose lo más dentro posible, Winston podía mantenerse fuera del alcance de la telepantalla en cuanto a la visualidad, ya que no podía evitar que oyera sus ruidos. En parte, fue la misma distribución insólita del cuarto lo que le indujo a lo que ahora se disponía a hacer.
+
+========================================================================
+
+RESULTADO 10
+------------------------------------------------------------------------
+Fragmento ID     : 289
+Similitud coseno : 0.060800
+Obra             : El mundo de Sofía
+Autor            : Jostein Gaarder
+Posición         : Nuestra época
+Palabras clave   : personajes_de_libro, dios_religion, muerte_vida, libertad, verdad_conocimiento, naturaleza_materia, historia_epoca, filosofos_modernos, filosofos_contemporaneos
+Book ID          : gaarder_sofia
+Idioma           : es
+Fuente           : Lectulandia
+URL              : https://ww3.lectulandia.com/book/el-mundo-de-sofia/
+
+TEXTO COMPLETO:
+—¡Sigue! —La palabra clave de la filosofía de Sartre es, como para Kierkegaard, la palabra «existencia». Ahora bien, no se entiende por existencia lo mismo que por «ser». Las plantas y los animales también «son», pero no tienen que preocuparse por lo que esto significa. El hombre es el único ser vivo que es consciente de su propia existencia. Sartre dice que las cosas físicas solamente son «en ellas mismas», pero el ser humano también es «para él mismo». Ser persona es algo muy diferente a ser cosa. —En eso estoy de acuerdo. —Sartre dice que la existencia del hombre precede a cualquier significado que pueda tener El que yo exista precede, por lo tanto, a lo que soy «La existencia precede a la esencia», dice. —Es una frase muy enredada. —Por «esencia» entendemos aquello de lo que algo consta, es decir la naturaleza de una cosa. Pero, según Sartre, el hombre no tiene una naturaleza innata. Por tanto el hombre tiene que crearse a sí mismo. Tiene que crear su propia naturaleza o «esencia» porque esto no es algo que venga dado de antemano. —Creo que entiendo lo que quieres decir. —A través de toda la historia de la filosofía, los filósofos han intentado dar una respuesta a qué es el hombre, o qué es la naturaleza humana. Pero Sartre pensaba que el hombre no tiene una tal «naturaleza» eterna en que refugiarse. Por eso tampoco sirve preguntar por el «sentido» de la vida en general. Estamos, en otras palabras, condenados a improvisar. Somos como actores que entran en el escenario sin tener ningún papel estudiado de antemano, ningún cuaderno con el argumento, ningún apuntador que nos pueda susurrar al oído lo que debemos hacer. Tenemos que elegir por nuestra cuenta cómo queremos vivir. —En cierta manera es verdad. Si en la Biblia, o en un libro de texto de filosofía, pudiéramos consultar cómo debemos vivir, estaría muy bien. —Has cogido el significado. Pero cuando el hombre se da cuenta de que existe y de que va a morir, y de que no tiene nada a lo que agarrarse, entonces esto crea angustia, según Sartre. Recordarás que la angustia también era característica de la descripción de Kierkegaard de un hombre que se encuentra en una situación existencial. —Sí. —Sartre dice además que el hombre se siente extranjero en un mundo sin sentido. Al describir la «alienación» del hombre, recoge al mismo tiempo pensamientos centrales de Hegel y Marx. La sensación del hombre de ser un extranjero en el mundo, crea un sentimiento de desesperación, aburrimiento, asco y absurdo. —Sigue siendo bastante corriente sentirse «deprimido» o pensar que todo es «un rollo». —Sí, Sartre describió al ser urbano del siglo XX. Recordarás que los humanistas del Renacimiento habían señalado casi triunfalmente la libertad y la independencia del ser humano. Sartre, por el contrario, consideró la libertad del hombre como una condena. «El hombre está condenado a ser libre», dijo. «Condenado porque no se ha creado a sí mismo y sin embargo es libre. Porque una vez que ha sido arrojado al mundo es responsable de todo lo que hace. »
+
+========================================================================
+
