@@ -7,7 +7,7 @@ frequency_bigram	2	Media	0.0000	0.0000	0.0000	0.0000	0.0000	5
 frequency_bigram	3	Difícil	0.1000	0.1000	0.1000	0.2722	0.0703	5
 binary_unigram	1	Fácil	0.2800	0.2800	0.2800	0.5400	0.3376	5
 binary_unigram	2	Media	0.4400	0.4400	0.4400	0.9000	0.5890	5
-binary_unigram	3	Difícil	0.0000	0.0000	0.0000	0.0000	0.0000	5
+binary_unigram	3	Difícil	0.0200	0.0200	0.0200	0.0222	0.0205	5
 binary_bigram	1	Fácil	0.1200	0.1200	0.1200	0.2167	0.1405	5
 binary_bigram	2	Media	0.0000	0.0000	0.0000	0.0000	0.0000	5
 binary_bigram	3	Difícil	0.0800	0.0800	0.0800	0.2222	0.0484	5

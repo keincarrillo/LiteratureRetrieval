@@ -41,7 +41,7 @@ binary_unigram	binary	unigram	Q09	2	0.7000	0.7000	0.7000	1.0000	0.8517	0	0	0
 binary_unigram	binary	unigram	Q10	2	0.3000	0.3000	0.3000	0.5000	0.2472	0	0	0
 binary_unigram	binary	unigram	Q11	3	0.0000	0.0000	0.0000	0.0000	0.0000	0	0	0
 binary_unigram	binary	unigram	Q12	3	0.0000	0.0000	0.0000	0.0000	0.0000	0	0	0
-binary_unigram	binary	unigram	Q13	3	0.0000	0.0000	0.0000	0.0000	0.0000	0	0	0
+binary_unigram	binary	unigram	Q13	3	0.1000	0.1000	0.1000	0.1111	0.1026	0	0	0
 binary_unigram	binary	unigram	Q14	3	0.0000	0.0000	0.0000	0.0000	0.0000	0	0	0
 binary_unigram	binary	unigram	Q15	3	0.0000	0.0000	0.0000	0.0000	0.0000	0	0	0
 binary_bigram	binary	bigram	Q01	1	0.2000	0.2000	0.2000	0.2500	0.1478	0	4	0
