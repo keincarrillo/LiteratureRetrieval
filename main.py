@@ -6,6 +6,7 @@ warnings.filterwarnings("ignore")
 
 from src.corpus import build_raw_corpus
 from src.nlp import normalize_corpus, normalize_query, tokenize_and_normalize
+from src.benchmark import run_benchmark
 
 
 def run_phase1():
@@ -50,6 +51,11 @@ def main():
         help="Ejecutar Fase 1 y Fase 2 de manera consecutiva",
     )
     parser.add_argument(
+        "--benchmark",
+        action="store_true",
+        help="Ejecutar Fase 6: Evaluar el benchmark de consultas y reportar metricas (P@10, R@10, F1@10, MRR, nDCG@10)",
+    )
+    parser.add_argument(
         "--query",
         type=str,
         default=None,
@@ -58,7 +64,7 @@ def main():
 
     args = parser.parse_args()
 
-    if not (args.phase1 or args.phase2 or args.all or args.query):
+    if not (args.phase1 or args.phase2 or args.all or args.query or args.benchmark):
         args.all = True
 
     if args.phase1 or args.all:
@@ -66,6 +72,13 @@ def main():
 
     if args.phase2 or args.all:
         run_phase2()
+
+    if args.benchmark:
+        run_benchmark(
+            queries_path=Path("queries.tsv"),
+            qrels_path=Path("qrels.tsv"),
+            rankings_output=Path("rankings.tsv"),
+        )
 
     if args.query:
         test_query_normalization(args.query)
