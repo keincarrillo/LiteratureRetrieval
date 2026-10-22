@@ -1,4 +1,4 @@
-"""Representacion en Modelo de Espacio Vectorial (Fase 4). """
+"""Representacion en Modelo de Espacio Vectorial (Fase 4)."""
 
 import argparse
 import csv

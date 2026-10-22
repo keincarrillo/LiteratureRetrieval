@@ -1,0 +1,7 @@
+config	representation	feature	p10	r10	f1_10	mrr	ndcg10	n_queries	n_empty_query_vectors	best
+frequency_unigram	frequency	unigram	0.2200	0.2200	0.2200	0.4667	0.2765	15	0	0
+frequency_bigram	frequency	bigram	0.0667	0.0667	0.0667	0.1963	0.0682	15	8	0
+binary_unigram	binary	unigram	0.2400	0.2400	0.2400	0.4800	0.3089	15	0	0
+binary_bigram	binary	bigram	0.0667	0.0667	0.0667	0.1463	0.0630	15	8	0
+tfidf_unigram	tfidf	unigram	0.3333	0.3333	0.3333	0.5796	0.3994	15	0	1
+tfidf_bigram	tfidf	bigram	0.0733	0.0733	0.0733	0.1880	0.0674	15	8	0

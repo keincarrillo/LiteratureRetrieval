@@ -1,4 +1,9 @@
-"""Fase 5: recuperación de fragmentos mediante VSM y similitud coseno."""
+"""Fase 5: recuperación de fragmentos mediante VSM y similitud coseno.
+
+Uso:
+python -m src.retrieval --query "dormir, soñar y despertar por la noche"
+python -m src.retrieval -q "<consulta>" -r <representación> -f <n-grama>
+"""
 
 import argparse
 import csv
