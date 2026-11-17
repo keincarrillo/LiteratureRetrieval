@@ -1,0 +1,5 @@
+max_df	n_eliminados	terminos_eliminados
+1.0	0	
+0.85	6	estar, haber, más, no, ser, tener
+0.7	10	decir, estar, haber, hacer, más, no, poder, ser, tener, ya
+0.5	23	así, dar, decir, estar, haber, hacer, hombre, ir, llegar, mucho, más, no, poder, querer, saber, ser, sólo, también, tanto, tener, ver, vez, ya
