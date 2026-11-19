@@ -67,6 +67,15 @@ LiteratureRetrieval/
 │   ├── filter.py                           # Segmentacion y filtrado de fragmentos
 │   └── keywords.py                         # Generacion de palabras clave por obra
 │
+├── Passages/                               # Etapa 2: Clustering y modelado de temas sobre pasajes
+│   ├── split.py                            # Particion reproducible train / dev / test por capitulo
+│   ├── normalize.py                        # 5 niveles de normalizacion (N0 - N4) con spaCy
+│   ├── explore_vocab.py                    # Analisis exploratorio de vocabulario y varianza SVD
+│   ├── representation.py                   # 13 recetas y constructor comun de vectorizadores
+│   ├── results.py                          # Funciones compartidas de guardado y consolidacion TSV
+│   ├── agglomerative.py                    # Experimentos y evaluacion de Agglomerative Clustering
+│   └── TSV/                                # Particiones, corpus normalizados y resultados por metodo
+│
 └── docs/                                   # Documentacion tecnica detallada
     ├── README.md                           # Indice de la documentacion
     ├── ARCHITECTURE.md                     # Arquitectura de software y flujo de datos
@@ -314,6 +323,31 @@ El modulo `src/nlp.py` implementa las siguientes reglas sistematicas:
    - **Descartados**: Articulos (`DET`), preposiciones (`ADP`), conjunciones (`CCONJ`, `SCONJ`), pronombres (`PRON`), signos de puntuacion (`PUNCT`) y espacios (`SPACE`).
 3. **Lematizacion y resolucion de cliticos**: Cada token aceptado se convierte a su lema en minusculas (`token.lemma_.lower()`). Si spaCy separa pronombres encliticos (por ejemplo, `meterse` -> `meter él`), se toma unicamente la raiz base (`meter`).
 4. **Campos protegidos**: La columna `title` y la columna `keywords` se mantienen intactas sin lematizar ni podar para preservar la integridad de los metadatos bibliograficos.
+
+---
+
+## Etapa 2: Pasajes (Clustering y Modelado de Temas)
+
+La carpeta `Passages/` extiende el proyecto con particion reproducible (`train` 357 / `dev` 72 / `test` 71, semilla `SEED = 3`), cinco normalizaciones (`N0`–`N4`), trece recetas de representacion vectorial y una interfaz comun de resultados en `Passages/TSV/Results/`.
+
+### Comandos principales (Etapa 2)
+
+```bash
+# Verificar recetas y dimensiones por split
+python Passages/representation.py
+
+# Ejecutar experimentos de Agglomerative Clustering (A01-A31)
+python Passages/agglomerative.py
+
+# Consolidar los resultados de todos los algoritmos en Passages/TSV/Results/
+python Passages/results.py
+```
+
+| Tarea | Script | Carpeta de salida | Estado |
+| :--- | :--- | :--- | :--- |
+| Base y vectorizacion | `Passages/representation.py`, `Passages/results.py` | `Passages/TSV/` | Listo |
+| Agglomerative Clustering | `Passages/agglomerative.py` | `Passages/TSV/Results/agglomerative/` | Listo (`A23`) |
+| K-Means / LDA / NMF | `kmeans.py`, `lda.py`, `nmf.py` | `Passages/TSV/Results/<algoritmo>/` | Pendiente de equipo |
 
 ---
 
