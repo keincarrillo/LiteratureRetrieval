@@ -1,0 +1,93 @@
+experiment_id	task	method	recipe	normalization	representation	ngram_range	vocabulary	dim_reduction	hyperparameters	dev_metric	dev_value	selected	notes
+K01	clustering	K-Means	base	N3	TF-IDF	(1,1)	V2	none	k=5; init=k-means++; n_init=10; max_iter=300; seed=3	silhouette (dev)	0.054176	no	tamanos=[76, 70, 40, 75, 96]
+K02	clustering	K-Means	norm_N0	N0	TF-IDF	(1,1)	V2	none	k=5; init=k-means++; n_init=10; max_iter=300; seed=3	silhouette (dev)	0.038244	no	tamanos=[62, 81, 78, 76, 60]
+K03	clustering	K-Means	norm_N1	N1	TF-IDF	(1,1)	V2	none	k=5; init=k-means++; n_init=10; max_iter=300; seed=3	silhouette (dev)	0.045639	no	tamanos=[72, 61, 76, 70, 78]
+K04	clustering	K-Means	norm_N2	N2	TF-IDF	(1,1)	V2	none	k=5; init=k-means++; n_init=10; max_iter=300; seed=3	silhouette (dev)	0.042413	no	tamanos=[76, 116, 60, 38, 67]
+K05	clustering	K-Means	norm_N4	N4	TF-IDF	(1,1)	V2	none	k=5; init=k-means++; n_init=10; max_iter=300; seed=3	silhouette (dev)	0.023238	no	tamanos=[32, 84, 69, 76, 96]
+K06	clustering	K-Means	rep_R1	N3	binary	(1,1)	V2	none	k=5; init=k-means++; n_init=10; max_iter=300; seed=3	silhouette (dev)	0.004439	no	tamanos=[12, 64, 136, 76, 69] | cluster diminuto (min=12)
+K07	clustering	K-Means	rep_R2	N3	counts	(1,1)	V2	none	k=5; init=k-means++; n_init=10; max_iter=300; seed=3	silhouette (dev)	0.053711	no	tamanos=[36, 132, 76, 35, 78]
+K08	clustering	K-Means	ngram_12	N3	TF-IDF	(1,2)	V2	none	k=5; init=k-means++; n_init=10; max_iter=300; seed=3	silhouette (dev)	0.043069	no	tamanos=[79, 77, 83, 70, 48]
+K09	clustering	K-Means	ngram_13	N3	TF-IDF	(1,3)	V2	none	k=5; init=k-means++; n_init=10; max_iter=300; seed=3	silhouette (dev)	0.044291	no	tamanos=[67, 76, 66, 70, 78]
+K10	clustering	K-Means	vocab_V1	N3	TF-IDF	(1,1)	V1	none	k=5; init=k-means++; n_init=10; max_iter=300; seed=3	silhouette (dev)	0.048945	no	tamanos=[41, 69, 76, 101, 70]
+K11	clustering	K-Means	vocab_V3	N3	TF-IDF	(1,1)	V3	none	k=5; init=k-means++; n_init=10; max_iter=300; seed=3	silhouette (dev)	0.064839	no	tamanos=[42, 76, 71, 98, 70]
+K12	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=5; init=k-means++; n_init=10; max_iter=300; seed=3	silhouette (dev)	0.272736	no	tamanos=[40, 70, 71, 76, 100]
+K13	clustering	K-Means	svd_200	N3	TF-IDF	(1,1)	V2	SVD=200	k=5; init=k-means++; n_init=10; max_iter=300; seed=3	silhouette (dev)	0.217984	no	tamanos=[40, 76, 70, 101, 70]
+K14	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=3; init=k-means++; n_init=10; max_iter=100; seed=3	silhouette (dev)	0.198242	no	tamanos=[76, 203, 78]
+K15	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=3; init=k-means++; n_init=10; max_iter=300; seed=3	silhouette (dev)	0.198242	no	tamanos=[76, 203, 78]
+K16	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=3; init=k-means++; n_init=20; max_iter=100; seed=3	silhouette (dev)	0.198242	no	tamanos=[76, 203, 78]
+K17	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=3; init=k-means++; n_init=20; max_iter=300; seed=3	silhouette (dev)	0.198242	no	tamanos=[76, 203, 78]
+K18	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=3; init=random; n_init=10; max_iter=100; seed=3	silhouette (dev)	0.198242	no	tamanos=[203, 78, 76]
+K19	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=3; init=random; n_init=10; max_iter=300; seed=3	silhouette (dev)	0.198242	no	tamanos=[203, 78, 76]
+K20	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=3; init=random; n_init=20; max_iter=100; seed=3	silhouette (dev)	0.198242	no	tamanos=[203, 78, 76]
+K21	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=3; init=random; n_init=20; max_iter=300; seed=3	silhouette (dev)	0.198242	no	tamanos=[203, 78, 76]
+K22	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=4; init=k-means++; n_init=10; max_iter=100; seed=3	silhouette (dev)	0.23333	no	tamanos=[78, 40, 163, 76]
+K23	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=4; init=k-means++; n_init=10; max_iter=300; seed=3	silhouette (dev)	0.23333	no	tamanos=[78, 40, 163, 76]
+K24	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=4; init=k-means++; n_init=20; max_iter=100; seed=3	silhouette (dev)	0.23333	no	tamanos=[78, 40, 163, 76]
+K25	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=4; init=k-means++; n_init=20; max_iter=300; seed=3	silhouette (dev)	0.23333	no	tamanos=[78, 40, 163, 76]
+K26	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=4; init=random; n_init=10; max_iter=100; seed=3	silhouette (dev)	0.23333	no	tamanos=[40, 78, 76, 163]
+K27	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=4; init=random; n_init=10; max_iter=300; seed=3	silhouette (dev)	0.23333	no	tamanos=[40, 78, 76, 163]
+K28	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=4; init=random; n_init=20; max_iter=100; seed=3	silhouette (dev)	0.23333	no	tamanos=[40, 78, 76, 163]
+K29	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=4; init=random; n_init=20; max_iter=300; seed=3	silhouette (dev)	0.23333	no	tamanos=[40, 78, 76, 163]
+K30	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=5; init=k-means++; n_init=10; max_iter=100; seed=3	silhouette (dev)	0.272736	no	tamanos=[40, 70, 71, 76, 100]
+K31	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=5; init=k-means++; n_init=10; max_iter=300; seed=3	silhouette (dev)	0.272736	no	tamanos=[40, 70, 71, 76, 100]
+K32	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=5; init=k-means++; n_init=20; max_iter=100; seed=3	silhouette (dev)	0.272736	no	tamanos=[40, 70, 71, 76, 100]
+K33	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=5; init=k-means++; n_init=20; max_iter=300; seed=3	silhouette (dev)	0.272736	no	tamanos=[40, 70, 71, 76, 100]
+K34	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=5; init=random; n_init=10; max_iter=100; seed=3	silhouette (dev)	0.272736	no	tamanos=[70, 40, 76, 70, 101]
+K35	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=5; init=random; n_init=10; max_iter=300; seed=3	silhouette (dev)	0.272736	no	tamanos=[70, 40, 76, 70, 101]
+K36	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=5; init=random; n_init=20; max_iter=100; seed=3	silhouette (dev)	0.272736	no	tamanos=[40, 70, 76, 71, 100]
+K37	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=5; init=random; n_init=20; max_iter=300; seed=3	silhouette (dev)	0.272736	no	tamanos=[40, 70, 76, 71, 100]
+K39	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=6; init=k-means++; n_init=10; max_iter=300; seed=3	silhouette (dev)	0.286075	no	tamanos=[76, 60, 76, 40, 49, 56]
+K40	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=6; init=k-means++; n_init=20; max_iter=100; seed=3	silhouette (dev)	0.286075	no	tamanos=[79, 76, 51, 40, 48, 63]
+K41	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=6; init=k-means++; n_init=20; max_iter=300; seed=3	silhouette (dev)	0.286075	no	tamanos=[79, 76, 51, 40, 48, 63]
+K42	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=6; init=random; n_init=10; max_iter=100; seed=3	silhouette (dev)	0.286075	no	tamanos=[39, 77, 59, 62, 76, 44]
+K43	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=6; init=random; n_init=10; max_iter=300; seed=3	silhouette (dev)	0.286075	no	tamanos=[39, 77, 59, 62, 76, 44]
+K44	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=6; init=random; n_init=20; max_iter=100; seed=3	silhouette (dev)	0.286075	no	tamanos=[39, 77, 59, 62, 76, 44]
+K45	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=6; init=random; n_init=20; max_iter=300; seed=3	silhouette (dev)	0.286075	no	tamanos=[39, 77, 59, 62, 76, 44]
+K46	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=8; init=k-means++; n_init=10; max_iter=100; seed=3	silhouette (dev)	0.214658	no	tamanos=[32, 76, 40, 56, 44, 39, 14, 56] | cluster diminuto (min=14)
+K47	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=8; init=k-means++; n_init=10; max_iter=300; seed=3	silhouette (dev)	0.214658	no	tamanos=[32, 76, 40, 56, 44, 39, 14, 56] | cluster diminuto (min=14)
+K48	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=8; init=k-means++; n_init=20; max_iter=100; seed=3	silhouette (dev)	0.24364	no	tamanos=[52, 76, 40, 39, 53, 17, 36, 44]
+K49	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=8; init=k-means++; n_init=20; max_iter=300; seed=3	silhouette (dev)	0.24364	no	tamanos=[52, 76, 40, 39, 53, 17, 36, 44]
+K50	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=8; init=random; n_init=10; max_iter=100; seed=3	silhouette (dev)	0.248356	no	tamanos=[19, 35, 50, 25, 70, 76, 52, 30]
+K51	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=8; init=random; n_init=10; max_iter=300; seed=3	silhouette (dev)	0.248356	no	tamanos=[19, 35, 50, 25, 70, 76, 52, 30]
+K52	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=8; init=random; n_init=20; max_iter=100; seed=3	silhouette (dev)	0.24992	no	tamanos=[57, 16, 39, 76, 69, 30, 50, 20]
+K53	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=8; init=random; n_init=20; max_iter=300; seed=3	silhouette (dev)	0.24992	no	tamanos=[57, 16, 39, 76, 69, 30, 50, 20]
+K54	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=10; init=k-means++; n_init=10; max_iter=100; seed=3	silhouette (dev)	0.176921	no	tamanos=[31, 38, 17, 38, 47, 42, 38, 53, 17, 36]
+K55	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=10; init=k-means++; n_init=10; max_iter=300; seed=3	silhouette (dev)	0.176921	no	tamanos=[31, 38, 17, 38, 47, 42, 38, 53, 17, 36]
+K56	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=10; init=k-means++; n_init=20; max_iter=100; seed=3	silhouette (dev)	0.176921	no	tamanos=[31, 38, 17, 38, 47, 42, 38, 53, 17, 36]
+K57	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=10; init=k-means++; n_init=20; max_iter=300; seed=3	silhouette (dev)	0.176921	no	tamanos=[31, 38, 17, 38, 47, 42, 38, 53, 17, 36]
+K58	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=10; init=random; n_init=10; max_iter=100; seed=3	silhouette (dev)	0.179939	no	tamanos=[16, 71, 12, 28, 43, 32, 52, 64, 17, 22] | cluster diminuto (min=12)
+K59	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=10; init=random; n_init=10; max_iter=300; seed=3	silhouette (dev)	0.179939	no	tamanos=[16, 71, 12, 28, 43, 32, 52, 64, 17, 22] | cluster diminuto (min=12)
+K60	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=10; init=random; n_init=20; max_iter=100; seed=3	silhouette (dev)	0.19765	no	tamanos=[54, 16, 39, 76, 27, 30, 30, 14, 26, 45] | cluster diminuto (min=14)
+K61	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=10; init=random; n_init=20; max_iter=300; seed=3	silhouette (dev)	0.19765	no	tamanos=[54, 16, 39, 76, 27, 30, 30, 14, 26, 45] | cluster diminuto (min=14)
+K38	clustering	K-Means	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=6; init=k-means++; n_init=10; max_iter=100; seed=3	silhouette (dev)	0.286075	yes	tamanos=[76, 60, 76, 40, 49, 56] | configuracion elegida
+A01	clustering	Agglomerative	base	N3	TF-IDF	(1,1)	V2	none	k=5; linkage=ward; metric=euclidean; seed_svd=3	silhouette (train)	0.034995	no	tamanos=[106, 72, 71, 32, 76]
+A02	clustering	Agglomerative	norm_N0	N0	TF-IDF	(1,1)	V2	none	k=5; linkage=ward; metric=euclidean; seed_svd=3	silhouette (train)	0.035116	no	tamanos=[92, 55, 71, 76, 63]
+A03	clustering	Agglomerative	norm_N1	N1	TF-IDF	(1,1)	V2	none	k=5; linkage=ward; metric=euclidean; seed_svd=3	silhouette (train)	0.031187	no	tamanos=[117, 76, 71, 36, 57]
+A04	clustering	Agglomerative	norm_N2	N2	TF-IDF	(1,1)	V2	none	k=5; linkage=ward; metric=euclidean; seed_svd=3	silhouette (train)	0.029961	no	tamanos=[113, 70, 37, 76, 61]
+A05	clustering	Agglomerative	norm_N4	N4	TF-IDF	(1,1)	V2	none	k=5; linkage=ward; metric=euclidean; seed_svd=3	silhouette (train)	0.020914	no	tamanos=[71, 74, 80, 76, 56]
+A06	clustering	Agglomerative	rep_R1	N3	binary	(1,1)	V2	none	k=5; linkage=ward; metric=euclidean; seed_svd=3	silhouette (train)	-0.002186	no	tamanos=[69, 73, 71, 76, 68]
+A07	clustering	Agglomerative	rep_R2	N3	counts	(1,1)	V2	none	k=5; linkage=ward; metric=euclidean; seed_svd=3	silhouette (train)	0.050418	no	tamanos=[106, 70, 71, 76, 34]
+A08	clustering	Agglomerative	ngram_12	N3	TF-IDF	(1,2)	V2	none	k=5; linkage=ward; metric=euclidean; seed_svd=3	silhouette (train)	0.026289	no	tamanos=[83, 55, 71, 76, 72]
+A09	clustering	Agglomerative	ngram_13	N3	TF-IDF	(1,3)	V2	none	k=5; linkage=ward; metric=euclidean; seed_svd=3	silhouette (train)	0.025025	no	tamanos=[82, 72, 71, 76, 56]
+A10	clustering	Agglomerative	vocab_V1	N3	TF-IDF	(1,1)	V1	none	k=5; linkage=ward; metric=euclidean; seed_svd=3	silhouette (train)	0.031751	no	tamanos=[106, 71, 71, 33, 76]
+A11	clustering	Agglomerative	vocab_V3	N3	TF-IDF	(1,1)	V3	none	k=5; linkage=ward; metric=euclidean; seed_svd=3	silhouette (train)	0.04394	no	tamanos=[106, 72, 71, 32, 76]
+A12	clustering	Agglomerative	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=5; linkage=ward; metric=euclidean; seed_svd=3	silhouette (train)	0.083329	no	tamanos=[124, 76, 70, 34, 53]
+A13	clustering	Agglomerative	svd_200	N3	TF-IDF	(1,1)	V2	SVD=200	k=5; linkage=ward; metric=euclidean; seed_svd=3	silhouette (train)	0.052685	no	tamanos=[84, 58, 69, 76, 70]
+A14	clustering	Agglomerative	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=3; linkage=ward; metric=euclidean; seed_svd=3	silhouette (train)	0.067378	no	tamanos=[211, 76, 70]
+A15	clustering	Agglomerative	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=3; linkage=average; metric=cosine; seed_svd=3	silhouette (train)	0.060794	no	tamanos=[285, 1, 71] | cluster diminuto (min=1)
+A16	clustering	Agglomerative	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=3; linkage=complete; metric=cosine; seed_svd=3	silhouette (train)	0.036299	no	tamanos=[197, 136, 24]
+A17	clustering	Agglomerative	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=4; linkage=ward; metric=euclidean; seed_svd=3	silhouette (train)	0.073893	no	tamanos=[177, 76, 70, 34]
+A18	clustering	Agglomerative	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=4; linkage=average; metric=cosine; seed_svd=3	silhouette (train)	0.10641	no	tamanos=[209, 76, 71, 1] | cluster diminuto (min=1)
+A19	clustering	Agglomerative	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=4; linkage=complete; metric=cosine; seed_svd=3	silhouette (train)	0.045692	no	tamanos=[136, 140, 24, 57]
+A20	clustering	Agglomerative	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=5; linkage=ward; metric=euclidean; seed_svd=3	silhouette (train)	0.083329	no	tamanos=[124, 76, 70, 34, 53]
+A21	clustering	Agglomerative	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=5; linkage=average; metric=cosine; seed_svd=3	silhouette (train)	0.128084	no	tamanos=[142, 67, 71, 1, 76] | cluster diminuto (min=1)
+A22	clustering	Agglomerative	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=5; linkage=complete; metric=cosine; seed_svd=3	silhouette (train)	0.04888	no	tamanos=[140, 94, 24, 57, 42]
+A24	clustering	Agglomerative	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=6; linkage=average; metric=cosine; seed_svd=3	silhouette (train)	0.149836	no	tamanos=[67, 70, 72, 1, 76, 71] | cluster diminuto (min=1)
+A25	clustering	Agglomerative	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=6; linkage=complete; metric=cosine; seed_svd=3	silhouette (train)	0.082833	no	tamanos=[94, 42, 24, 57, 64, 76]
+A26	clustering	Agglomerative	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=8; linkage=ward; metric=euclidean; seed_svd=3	silhouette (train)	0.089409	no	tamanos=[70, 76, 57, 34, 53, 34, 19, 14] | cluster diminuto (min=14)
+A27	clustering	Agglomerative	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=8; linkage=average; metric=cosine; seed_svd=3	silhouette (train)	0.14543	no	tamanos=[70, 57, 72, 5, 76, 71, 5, 1] | cluster diminuto (min=1)
+A28	clustering	Agglomerative	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=8; linkage=complete; metric=cosine; seed_svd=3	silhouette (train)	0.091206	no	tamanos=[51, 42, 43, 57, 64, 76, 11, 13] | cluster diminuto (min=11)
+A29	clustering	Agglomerative	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=10; linkage=ward; metric=euclidean; seed_svd=3	silhouette (train)	0.069506	no	tamanos=[53, 34, 57, 31, 49, 34, 19, 14, 21, 45] | cluster diminuto (min=14)
+A30	clustering	Agglomerative	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=10; linkage=average; metric=cosine; seed_svd=3	silhouette (train)	0.158491	no	tamanos=[72, 16, 16, 54, 41, 71, 5, 1, 5, 76] | cluster diminuto (min=1)
+A31	clustering	Agglomerative	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=10; linkage=complete; metric=cosine; seed_svd=3	silhouette (train)	0.086328	no	tamanos=[57, 64, 43, 40, 19, 76, 11, 13, 11, 23] | cluster diminuto (min=11)
+A23	clustering	Agglomerative	svd_100	N3	TF-IDF	(1,1)	V2	SVD=100	k=6; linkage=ward; metric=euclidean; seed_svd=3	silhouette (train)	0.090081	yes	tamanos=[53, 76, 71, 34, 53, 70] | configuracion elegida

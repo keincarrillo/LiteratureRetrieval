@@ -1,0 +1,96 @@
+experiment_id	algorithm	split	metric	value	interpretation	note
+K01	K-Means	dev	silhouette	0.054176	higher is better	predict en dev; R3
+K02	K-Means	dev	silhouette	0.038244	higher is better	predict en dev; R3
+K03	K-Means	dev	silhouette	0.045639	higher is better	predict en dev; R3
+K04	K-Means	dev	silhouette	0.042413	higher is better	predict en dev; R3
+K05	K-Means	dev	silhouette	0.023238	higher is better	predict en dev; R3
+K06	K-Means	dev	silhouette	0.004439	higher is better	predict en dev; R1
+K07	K-Means	dev	silhouette	0.053711	higher is better	predict en dev; R2
+K08	K-Means	dev	silhouette	0.043069	higher is better	predict en dev; R3
+K09	K-Means	dev	silhouette	0.044291	higher is better	predict en dev; R3
+K10	K-Means	dev	silhouette	0.048945	higher is better	predict en dev; R3
+K11	K-Means	dev	silhouette	0.064839	higher is better	predict en dev; R3
+K12	K-Means	dev	silhouette	0.272736	higher is better	predict en dev; SVD-100+L2
+K13	K-Means	dev	silhouette	0.217984	higher is better	predict en dev; SVD-200+L2
+K14	K-Means	dev	silhouette	0.198242	higher is better	predict en dev; SVD-100+L2
+K15	K-Means	dev	silhouette	0.198242	higher is better	predict en dev; SVD-100+L2
+K16	K-Means	dev	silhouette	0.198242	higher is better	predict en dev; SVD-100+L2
+K17	K-Means	dev	silhouette	0.198242	higher is better	predict en dev; SVD-100+L2
+K18	K-Means	dev	silhouette	0.198242	higher is better	predict en dev; SVD-100+L2
+K19	K-Means	dev	silhouette	0.198242	higher is better	predict en dev; SVD-100+L2
+K20	K-Means	dev	silhouette	0.198242	higher is better	predict en dev; SVD-100+L2
+K21	K-Means	dev	silhouette	0.198242	higher is better	predict en dev; SVD-100+L2
+K22	K-Means	dev	silhouette	0.23333	higher is better	predict en dev; SVD-100+L2
+K23	K-Means	dev	silhouette	0.23333	higher is better	predict en dev; SVD-100+L2
+K24	K-Means	dev	silhouette	0.23333	higher is better	predict en dev; SVD-100+L2
+K25	K-Means	dev	silhouette	0.23333	higher is better	predict en dev; SVD-100+L2
+K26	K-Means	dev	silhouette	0.23333	higher is better	predict en dev; SVD-100+L2
+K27	K-Means	dev	silhouette	0.23333	higher is better	predict en dev; SVD-100+L2
+K28	K-Means	dev	silhouette	0.23333	higher is better	predict en dev; SVD-100+L2
+K29	K-Means	dev	silhouette	0.23333	higher is better	predict en dev; SVD-100+L2
+K30	K-Means	dev	silhouette	0.272736	higher is better	predict en dev; SVD-100+L2
+K31	K-Means	dev	silhouette	0.272736	higher is better	predict en dev; SVD-100+L2
+K32	K-Means	dev	silhouette	0.272736	higher is better	predict en dev; SVD-100+L2
+K33	K-Means	dev	silhouette	0.272736	higher is better	predict en dev; SVD-100+L2
+K34	K-Means	dev	silhouette	0.272736	higher is better	predict en dev; SVD-100+L2
+K35	K-Means	dev	silhouette	0.272736	higher is better	predict en dev; SVD-100+L2
+K36	K-Means	dev	silhouette	0.272736	higher is better	predict en dev; SVD-100+L2
+K37	K-Means	dev	silhouette	0.272736	higher is better	predict en dev; SVD-100+L2
+K39	K-Means	dev	silhouette	0.286075	higher is better	predict en dev; SVD-100+L2
+K40	K-Means	dev	silhouette	0.286075	higher is better	predict en dev; SVD-100+L2
+K41	K-Means	dev	silhouette	0.286075	higher is better	predict en dev; SVD-100+L2
+K42	K-Means	dev	silhouette	0.286075	higher is better	predict en dev; SVD-100+L2
+K43	K-Means	dev	silhouette	0.286075	higher is better	predict en dev; SVD-100+L2
+K44	K-Means	dev	silhouette	0.286075	higher is better	predict en dev; SVD-100+L2
+K45	K-Means	dev	silhouette	0.286075	higher is better	predict en dev; SVD-100+L2
+K46	K-Means	dev	silhouette	0.214658	higher is better	predict en dev; SVD-100+L2
+K47	K-Means	dev	silhouette	0.214658	higher is better	predict en dev; SVD-100+L2
+K48	K-Means	dev	silhouette	0.24364	higher is better	predict en dev; SVD-100+L2
+K49	K-Means	dev	silhouette	0.24364	higher is better	predict en dev; SVD-100+L2
+K50	K-Means	dev	silhouette	0.248356	higher is better	predict en dev; SVD-100+L2
+K51	K-Means	dev	silhouette	0.248356	higher is better	predict en dev; SVD-100+L2
+K52	K-Means	dev	silhouette	0.24992	higher is better	predict en dev; SVD-100+L2
+K53	K-Means	dev	silhouette	0.24992	higher is better	predict en dev; SVD-100+L2
+K54	K-Means	dev	silhouette	0.176921	higher is better	predict en dev; SVD-100+L2
+K55	K-Means	dev	silhouette	0.176921	higher is better	predict en dev; SVD-100+L2
+K56	K-Means	dev	silhouette	0.176921	higher is better	predict en dev; SVD-100+L2
+K57	K-Means	dev	silhouette	0.176921	higher is better	predict en dev; SVD-100+L2
+K58	K-Means	dev	silhouette	0.179939	higher is better	predict en dev; SVD-100+L2
+K59	K-Means	dev	silhouette	0.179939	higher is better	predict en dev; SVD-100+L2
+K60	K-Means	dev	silhouette	0.19765	higher is better	predict en dev; SVD-100+L2
+K61	K-Means	dev	silhouette	0.19765	higher is better	predict en dev; SVD-100+L2
+K38	K-Means	dev	silhouette	0.286075	higher is better	predict; SVD-100+L2
+K38	K-Means	test	silhouette	0.274337	higher is better	predict; SVD-100+L2
+A01	Agglomerative	train	silhouette	0.034995	higher is better	train; R3, metric=euclidean
+A02	Agglomerative	train	silhouette	0.035116	higher is better	train; R3, metric=euclidean
+A03	Agglomerative	train	silhouette	0.031187	higher is better	train; R3, metric=euclidean
+A04	Agglomerative	train	silhouette	0.029961	higher is better	train; R3, metric=euclidean
+A05	Agglomerative	train	silhouette	0.020914	higher is better	train; R3, metric=euclidean
+A06	Agglomerative	train	silhouette	-0.002186	higher is better	train; R1, metric=euclidean
+A07	Agglomerative	train	silhouette	0.050418	higher is better	train; R2, metric=euclidean
+A08	Agglomerative	train	silhouette	0.026289	higher is better	train; R3, metric=euclidean
+A09	Agglomerative	train	silhouette	0.025025	higher is better	train; R3, metric=euclidean
+A10	Agglomerative	train	silhouette	0.031751	higher is better	train; R3, metric=euclidean
+A11	Agglomerative	train	silhouette	0.04394	higher is better	train; R3, metric=euclidean
+A12	Agglomerative	train	silhouette	0.083329	higher is better	train; SVD-100+L2, metric=euclidean
+A13	Agglomerative	train	silhouette	0.052685	higher is better	train; SVD-200+L2, metric=euclidean
+A14	Agglomerative	train	silhouette	0.067378	higher is better	train; SVD-100+L2, metric=euclidean
+A15	Agglomerative	train	silhouette	0.060794	higher is better	train; SVD-100+L2, metric=cosine
+A16	Agglomerative	train	silhouette	0.036299	higher is better	train; SVD-100+L2, metric=cosine
+A17	Agglomerative	train	silhouette	0.073893	higher is better	train; SVD-100+L2, metric=euclidean
+A18	Agglomerative	train	silhouette	0.10641	higher is better	train; SVD-100+L2, metric=cosine
+A19	Agglomerative	train	silhouette	0.045692	higher is better	train; SVD-100+L2, metric=cosine
+A20	Agglomerative	train	silhouette	0.083329	higher is better	train; SVD-100+L2, metric=euclidean
+A21	Agglomerative	train	silhouette	0.128084	higher is better	train; SVD-100+L2, metric=cosine
+A22	Agglomerative	train	silhouette	0.04888	higher is better	train; SVD-100+L2, metric=cosine
+A23	Agglomerative	train	silhouette	0.090081	higher is better	train; SVD-100+L2, metric=euclidean
+A24	Agglomerative	train	silhouette	0.149836	higher is better	train; SVD-100+L2, metric=cosine
+A25	Agglomerative	train	silhouette	0.082833	higher is better	train; SVD-100+L2, metric=cosine
+A26	Agglomerative	train	silhouette	0.089409	higher is better	train; SVD-100+L2, metric=euclidean
+A27	Agglomerative	train	silhouette	0.14543	higher is better	train; SVD-100+L2, metric=cosine
+A28	Agglomerative	train	silhouette	0.091206	higher is better	train; SVD-100+L2, metric=cosine
+A29	Agglomerative	train	silhouette	0.069506	higher is better	train; SVD-100+L2, metric=euclidean
+A30	Agglomerative	train	silhouette	0.158491	higher is better	train; SVD-100+L2, metric=cosine
+A31	Agglomerative	train	silhouette	0.086328	higher is better	train; SVD-100+L2, metric=cosine
+A23	Agglomerative	dev	silhouette	0.286075	higher is better	approximate assignment (nearest centroid); SVD-100+L2, metric=euclidean
+A23	Agglomerative	test	silhouette	0.276189	higher is better	approximate assignment (nearest centroid); SVD-100+L2, metric=euclidean

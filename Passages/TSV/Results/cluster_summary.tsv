@@ -1,0 +1,13 @@
+experiment_id	algorithm	cluster_id	size	top_words	representative_passages
+K38	K-Means	0	76	odiseo, dios, así, telémaco, pretendiente, palacio, zeus, tierra, decir, casa	166, 103, 171
+K38	K-Means	1	60	poder, sabina, decir, franz, vida, también, vivir, mundo, ejemplo, año	432, 39, 277
+K38	K-Means	2	76	estado, alemán, pueblo, partido, deber, judío, poder, guerra, político, movimiento	333, 381, 371
+K38	K-Means	3	40	sofía, hilde, alberto, decir, madre, poder, mayor, también, filosofía, jardín	240, 260, 254
+K38	K-Means	4	49	winston, o'brien, julia, poder, decir, hacer, partido, mucho, sólo, saber	485, 481, 438
+K38	K-Means	5	56	tomás, teresa, decir, karenin, hacer, mujer, cuerpo, querer, poder, ver	90, 89, 14
+A23	Agglomerative	0	53	sabina, decir, sofía, franz, poder, mujer, hombre, también, dios, vida	41, 39, 40
+A23	Agglomerative	1	76	odiseo, dios, así, telémaco, pretendiente, palacio, zeus, tierra, decir, casa	166, 103, 171
+A23	Agglomerative	2	71	winston, o'brien, poder, partido, julia, hacer, decir, sólo, guerra, mucho	485, 477, 498
+A23	Agglomerative	3	34	sofía, hilde, alberto, decir, madre, poder, sócrates, filósofo, perro, mayor	260, 254, 240
+A23	Agglomerative	4	53	tomás, teresa, karenin, decir, hacer, cuerpo, mujer, poder, querer, praga	89, 90, 14
+A23	Agglomerative	5	70	estado, alemán, pueblo, deber, judío, poder, político, partido, movimiento, alemania	324, 371, 372
