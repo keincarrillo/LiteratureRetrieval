@@ -1,0 +1,7 @@
+experiment_id	algorithm	cluster_id	size	top_words	representative_passages
+A23	Agglomerative	0	53	sabina, decir, sofía, franz, poder, mujer, hombre, también, dios, vida	41, 39, 40
+A23	Agglomerative	1	76	odiseo, dios, así, telémaco, pretendiente, palacio, zeus, tierra, decir, casa	166, 103, 171
+A23	Agglomerative	2	71	winston, o'brien, poder, partido, julia, hacer, decir, sólo, guerra, mucho	485, 477, 498
+A23	Agglomerative	3	34	sofía, hilde, alberto, decir, madre, poder, sócrates, filósofo, perro, mayor	260, 254, 240
+A23	Agglomerative	4	53	tomás, teresa, karenin, decir, hacer, cuerpo, mujer, poder, querer, praga	89, 90, 14
+A23	Agglomerative	5	70	estado, alemán, pueblo, deber, judío, poder, político, partido, movimiento, alemania	324, 371, 372
