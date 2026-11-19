@@ -1,0 +1,195 @@
+experiment_id	algorithm	topic_id	top_words	representative_passages
+N01	NMF	0	decir, poder, hacer, saber, ver, pensar, volver, vez, madre, mujer	81, 474
+N01	NMF	1	dios, así, palacio, pretendiente, hijo, casa, decir, padre, nave, hombre	116, 113
+N01	NMF	2	alemán, pueblo, judío, deber, guerra, partido, poder, político, movimiento, lucha	383, 325
+N02	NMF	0	madre, perro, carta, decir, casa, día, postal, jardín, cumpleaños, padre	201, 235
+N02	NMF	1	dios, así, palacio, pretendiente, hijo, casa, nave, decir, padre, hombre	116, 113
+N02	NMF	2	alemán, pueblo, judío, partido, deber, guerra, político, movimiento, poder, nacional	383, 386
+N02	NMF	3	hacer, cara, poder, volver, ver, mirar, momento, nunca, vez, decir	474, 422
+N02	NMF	4	decir, poder, mujer, hombre, también, naturaleza, vida, humano, pensar, persona	213, 488
+N03	NMF	0	madre, perro, carta, decir, casa, día, postal, jardín, cumpleaños, padre	201, 235
+N03	NMF	1	dios, así, palacio, pretendiente, hijo, casa, nave, padre, decir, tierra	116, 113
+N03	NMF	2	judío, partido, movimiento, político, organización, pueblo, deber, nacional, social, lucha	377, 387
+N03	NMF	3	cara, poder, hacer, mirar, volver, dolor, ver, momento, vez, hora	474, 422
+N03	NMF	4	poder, decir, también, humano, conciencia, naturaleza, vida, persona, existir, ejemplo	213, 488
+N03	NMF	5	mujer, cuerpo, amor, sueño, desnudo, hombre, decir, madre, hacer, amante	16, 7
+N03	NMF	6	redactor, decir, policía, firmar, artículo, escribir, declaración, doctor, gente, texto	9, 51
+N03	NMF	7	guerra, alemán, ejército, pueblo, frente, nación, deber, política, paz, enemigo	385, 384
+N04	NMF	0	perro, decir, carta, día, jardín, casa, cumpleaños, volver, postal, correr	201, 235
+N04	NMF	1	dios, así, palacio, pretendiente, hijo, casa, nave, padre, decir, tierra	116, 113
+N04	NMF	2	judío, partido, movimiento, político, organización, pueblo, social, nacional, deber, lucha	377, 387
+N04	NMF	3	poder, dolor, hacer, cara, volver, momento, nunca, mirar, hora, ver	474, 422
+N04	NMF	4	poder, decir, también, conciencia, naturaleza, humano, persona, vida, ejemplo, existir	213, 488
+N04	NMF	5	mujer, decir, sueño, hombre, amante, derecho, desnudo, hacer, piscina, sexo	7, 43
+N04	NMF	6	redactor, decir, policía, firmar, artículo, escribir, declaración, doctor, gente, texto	9, 51
+N04	NMF	7	guerra, alemán, ejército, pueblo, frente, nación, deber, política, paz, enemigo	385, 384
+N04	NMF	8	madre, amor, amar, hermanita, chocolate, saber, ir, recordar, hermana, caer	16, 15
+N04	NMF	9	cuerpo, alma, libro, pregunta, extenso, espejo, desnudo, autómata, hombre, animal	473, 491
+N05	NMF	0	tomás, teresa, karenin, decir, hacer, mujer, praga, querer, amor, cuerpo	7, 26
+N05	NMF	1	odiseo, telémaco, dios, así, pretendiente, palacio, zeus, casa, hijo, tierra	116, 191
+N05	NMF	2	estado, alemán, pueblo, judío, deber, político, nacional, alemania, nación, movimiento	383, 388
+N05	NMF	3	sofía, hilde, alberto, madre, decir, cumpleaños, mayor, perro, hermes, postal	245, 201
+N05	NMF	4	winston, o'brien, julia, poder, dolor, decir, mirar, ver, hacer, cara	491, 490
+N05	NMF	5	sabina, franz, mujer, marie-claude, sombrero, vivir, hongo, música, iglesia, vez	35, 43
+N05	NMF	6	decir, poder, naturaleza, también, hombre, dios, humano, conciencia, ejemplo, vida	213, 210
+N05	NMF	7	partido, guerra, oceanía, miembro, poder, eurasia, prol, winston, incluso, ministerio	419, 488
+N06	NMF	0	—, ?, ¿, dijo, es, usted, me, No, Sí, ...	52, 490
+N06	NMF	1	Odiseo, ;, :, te, me, Telémaco, mi, ¡, !, pretendientes	116, 191
+N06	NMF	2	*, Estado, pueblo, movimiento, guerra, Alemania, judío, lucha, alemán, nación	383, 388
+N06	NMF	3	Tomás, Teresa, Karenin, le, había, ella, :, él, era, estaba	7, 26
+N06	NMF	4	Winston, había, le, O'Brien, era, Partido, Julia, él, Era, pero	422, 474
+N06	NMF	5	Sofía, Hilde, había, Alberto, ?, ¿, madre, sobre, era, perro	245, 201
+N06	NMF	6	», «, es, Dios, o, ser, naturaleza, puede, hombre, decir	213, 244
+N06	NMF	7	Sabina, Franz, mujer, Marie-Claude, sombrero, hongo, le, ella, es, había	35, 43
+N07	NMF	0	teresa, tomás, karenin, le, ella, había, era, él, estaba, madre	7, 26
+N07	NMF	1	odiseo, te, me, mi, telémaco, pretendientes, así, tu, le, palacio	116, 191
+N07	NMF	2	estado, pueblo, guerra, movimiento, lucha, judío, alemán, alemania, política, partido	383, 376
+N07	NMF	3	sofía, hilde, alberto, había, madre, era, sobre, qué, estaba, cumpleaños	245, 201
+N07	NMF	4	winston, había, o'brien, le, era, julia, él, partido, podía, estaba	491, 422
+N07	NMF	5	es, o, puede, ser, decir, también, naturaleza, dios, tiene, eso	488, 213
+N07	NMF	6	sabina, franz, mujer, le, marie-claude, sombrero, ella, había, hongo, aquella	35, 81
+N07	NMF	7	usted, tomás, ministerio, redactor, dijo, le, artículo, hombre, policía, doctor	74, 52
+N08	NMF	0	tomás, teresa, karenin, había, era, dijo, estaba, praga, tenía, amor	7, 26
+N08	NMF	1	odiseo, pretendientes, telémaco, palacio, porquerizo, hijo, así, casa, penelopea, arco	189, 190
+N08	NMF	2	estado, pueblo, guerra, movimiento, judío, lucha, alemán, alemania, política, nación	383, 388
+N08	NMF	3	sofía, hilde, alberto, había, madre, era, estaba, cumpleaños, perro, mayor	245, 201
+N08	NMF	4	winston, había, o'brien, era, julia, partido, podía, estaba, tenía, habían	491, 422
+N08	NMF	5	es, puede, ser, tiene, decir, también, naturaleza, hombre, dios, vida	488, 213
+N08	NMF	6	sabina, franz, mujer, marie-claude, sombrero, había, hongo, era, es, iglesia	35, 43
+N08	NMF	7	odiseo, feacios, tierra, zeus, dioses, alcínoo, patria, así, nave, mar	149, 148
+N09	NMF	0	madre, perro, carta, decir, casa, día, postal, jardín, cumpleaños, padre	201, 235
+N09	NMF	1	dios, así, palacio, pretendiente, hijo, casa, nave, padre, decir, tierra	116, 113
+N09	NMF	2	judío, partido, movimiento, político, organización, pueblo, deber, nacional, social, lucha	377, 387
+N09	NMF	3	cara, poder, hacer, mirar, volver, dolor, ver, momento, vez, hora	474, 422
+N09	NMF	4	poder, decir, también, humano, conciencia, naturaleza, vida, persona, existir, ejemplo	213, 488
+N09	NMF	5	mujer, cuerpo, amor, sueño, desnudo, hombre, decir, madre, hacer, amante	16, 7
+N09	NMF	6	redactor, decir, policía, firmar, artículo, escribir, declaración, doctor, gente, texto	9, 51
+N09	NMF	7	guerra, alemán, ejército, pueblo, frente, nación, deber, política, paz, enemigo	385, 384
+N10	NMF	0	tomás, teresa, karenin, decir, hacer, mujer, amor, querer, praga, cuerpo	7, 26
+N10	NMF	1	odiseo, dios, telémaco, así, pretendiente, palacio, zeus, casa, hijo, tierra	191, 116
+N10	NMF	2	estado, alemán, pueblo, judío, deber, político, nacional, alemania, movimiento, poder	383, 387
+N10	NMF	3	sofía, hilde, alberto, madre, decir, cumpleaños, postal, mayor, cabaña, padre	245, 201
+N10	NMF	4	winston, o'brien, julia, poder, dolor, decir, mirar, dedo, hacer, ver	491, 490
+N10	NMF	5	decir, poder, naturaleza, también, humano, ser humano, hombre, dios, conciencia, ejemplo	213, 210
+N10	NMF	6	sabina, franz, mujer, marie-claude, sombrero, música, sombrero hongo, hongo, vivir, iglesia	35, 81
+N10	NMF	7	partido, guerra, oceanía, winston, miembro, poder, eurasia, miembro partido, prol, guerra ser	419, 488
+N11	NMF	0	tomás, teresa, karenin, decir, hacer, mujer, querer, amor, cuerpo, praga	7, 26
+N11	NMF	1	odiseo, dios, telémaco, así, pretendiente, palacio, zeus, casa, hijo, tierra	191, 115
+N11	NMF	2	estado, alemán, pueblo, judío, deber, político, nacional, alemania, movimiento, poder	383, 387
+N11	NMF	3	sofía, hilde, alberto, madre, decir, cumpleaños, postal, mayor, cabaña, padre	245, 201
+N11	NMF	4	winston, o'brien, julia, poder, dolor, decir, mirar, dedo, hacer, cara	491, 490
+N11	NMF	5	decir, poder, naturaleza, también, humano, ser humano, dios, hombre, conciencia, ejemplo	213, 210
+N11	NMF	6	sabina, franz, mujer, marie-claude, sombrero, música, hongo, sombrero hongo, vivir, iglesia	35, 81
+N11	NMF	7	partido, guerra, oceanía, winston, miembro, poder, eurasia, miembro partido, prol, guerra ser	419, 488
+N12	NMF	0	ser, no, poder, decir, tener, haber, más, también, humano, naturaleza	488, 213
+N12	NMF	1	odiseo, telémaco, dios, haber, no, así, ser, pretendiente, palacio, zeus	116, 191
+N12	NMF	2	estado, ser, judío, partido, movimiento, político, pueblo, no, organización, deber	377, 383
+N12	NMF	3	sofía, hilde, ser, haber, alberto, estar, no, madre, tener, decir	245, 201
+N12	NMF	4	winston, haber, o'brien, ser, no, julia, estar, partido, poder, tener	491, 422
+N12	NMF	5	tomás, teresa, no, haber, ser, karenin, estar, decir, tener, hacer	7, 26
+N12	NMF	6	sabina, franz, ser, mujer, no, haber, marie-claude, sombrero, estar, vivir	35, 81
+N12	NMF	7	alemán, guerra, alemania, haber, ser, ejército, francia, pueblo, frente, nación	385, 388
+N13	NMF	0	teresa, tomás, karenin, cuerpo, madre, mujer, hacer, amor, praga, volver	7, 15
+N13	NMF	1	odiseo, dios, telémaco, así, pretendiente, palacio, zeus, casa, hijo, tierra	115, 191
+N13	NMF	2	estado, alemán, pueblo, judío, partido, deber, político, guerra, movimiento, nacional	383, 375
+N13	NMF	3	sofía, hilde, alberto, madre, decir, cumpleaños, mayor, perro, jardín, correr	245, 201
+N13	NMF	4	winston, o'brien, julia, poder, partido, decir, hacer, mucho, recordar, dolor	491, 422
+N13	NMF	5	poder, decir, naturaleza, también, dios, hombre, humano, vida, conciencia, persona	213, 210
+N13	NMF	6	sabina, franz, mujer, marie-claude, sombrero, vivir, música, vez, iglesia, cuadro	35, 43
+N13	NMF	7	tomás, redactor, decir, ministerio, policía, firmar, declaración, artículo, doctor, escribir	74, 9
+N14	NMF	0	madre, perro, carta, decir, casa, día, postal, jardín, cumpleaños, padre	201, 235
+N14	NMF	1	dios, así, palacio, pretendiente, hijo, casa, nave, padre, decir, tierra	116, 113
+N14	NMF	2	judío, partido, movimiento, político, organización, pueblo, deber, nacional, social, lucha	377, 387
+N14	NMF	3	cara, poder, hacer, mirar, volver, dolor, ver, momento, vez, hora	474, 422
+N14	NMF	4	poder, decir, también, humano, conciencia, naturaleza, vida, persona, existir, ejemplo	213, 488
+N14	NMF	5	mujer, cuerpo, amor, sueño, desnudo, hombre, decir, madre, hacer, amante	16, 7
+N14	NMF	6	redactor, decir, policía, firmar, artículo, escribir, declaración, doctor, gente, texto	9, 51
+N14	NMF	7	guerra, alemán, ejército, pueblo, frente, nación, deber, política, paz, enemigo	385, 384
+N15	NMF	0	madre, perro, carta, decir, casa, día, postal, jardín, cumpleaños, padre	201, 235
+N15	NMF	1	dios, así, palacio, pretendiente, hijo, casa, nave, padre, decir, tierra	116, 113
+N15	NMF	2	judío, partido, movimiento, político, organización, pueblo, deber, nacional, social, lucha	377, 387
+N15	NMF	3	cara, poder, hacer, mirar, volver, dolor, ver, momento, vez, hora	474, 422
+N15	NMF	4	poder, decir, también, humano, conciencia, naturaleza, vida, persona, existir, ejemplo	213, 488
+N15	NMF	5	mujer, cuerpo, amor, sueño, desnudo, hombre, decir, madre, hacer, amante	16, 7
+N15	NMF	6	redactor, decir, policía, firmar, artículo, escribir, declaración, doctor, gente, texto	9, 51
+N15	NMF	7	guerra, alemán, ejército, pueblo, frente, nación, deber, política, paz, enemigo	385, 384
+N16	NMF	0	madre, perro, carta, decir, casa, día, postal, jardín, cumpleaños, padre	201, 235
+N16	NMF	1	dios, así, palacio, pretendiente, hijo, casa, nave, padre, decir, tierra	116, 113
+N16	NMF	2	judío, partido, movimiento, político, organización, pueblo, deber, nacional, social, lucha	377, 387
+N16	NMF	3	cara, poder, hacer, mirar, volver, dolor, ver, momento, vez, hora	474, 422
+N16	NMF	4	poder, decir, también, humano, conciencia, naturaleza, vida, persona, existir, ejemplo	213, 488
+N16	NMF	5	mujer, cuerpo, amor, sueño, desnudo, hombre, decir, madre, hacer, amante	16, 7
+N16	NMF	6	redactor, decir, policía, firmar, artículo, escribir, declaración, doctor, gente, texto	9, 51
+N16	NMF	7	guerra, alemán, ejército, pueblo, frente, nación, deber, política, paz, enemigo	385, 384
+N17	NMF	0	madre, perro, carta, decir, casa, día, postal, jardín, cumpleaños, padre	201, 235
+N17	NMF	1	dios, así, palacio, pretendiente, hijo, casa, nave, padre, decir, tierra	116, 113
+N17	NMF	2	judío, partido, movimiento, político, organización, pueblo, deber, nacional, social, lucha	377, 387
+N17	NMF	3	cara, poder, hacer, mirar, volver, dolor, ver, momento, vez, hora	474, 422
+N17	NMF	4	poder, decir, también, humano, conciencia, naturaleza, vida, persona, existir, ejemplo	213, 488
+N17	NMF	5	mujer, cuerpo, amor, sueño, desnudo, hombre, decir, madre, hacer, amante	16, 7
+N17	NMF	6	redactor, decir, policía, firmar, artículo, escribir, declaración, doctor, gente, texto	9, 51
+N17	NMF	7	guerra, alemán, ejército, pueblo, frente, nación, deber, política, paz, enemigo	385, 384
+N18	NMF	0	madre, perro, carta, decir, casa, día, postal, jardín, cumpleaños, padre	201, 235
+N18	NMF	1	dios, así, palacio, pretendiente, hijo, casa, nave, padre, decir, tierra	116, 113
+N18	NMF	2	judío, partido, movimiento, político, organización, pueblo, deber, nacional, social, lucha	377, 387
+N18	NMF	3	cara, poder, hacer, mirar, volver, dolor, ver, momento, vez, hora	474, 422
+N18	NMF	4	poder, decir, también, humano, conciencia, naturaleza, vida, persona, existir, ejemplo	213, 488
+N18	NMF	5	mujer, cuerpo, amor, sueño, desnudo, hombre, decir, madre, hacer, amante	16, 7
+N18	NMF	6	redactor, decir, policía, firmar, artículo, escribir, declaración, doctor, gente, texto	9, 51
+N18	NMF	7	guerra, alemán, ejército, pueblo, frente, nación, deber, política, paz, enemigo	385, 384
+N19	NMF	0	madre, perro, carta, decir, casa, día, postal, jardín, cumpleaños, padre	201, 235
+N19	NMF	1	dios, así, palacio, pretendiente, hijo, casa, nave, padre, decir, tierra	116, 113
+N19	NMF	2	judío, partido, movimiento, político, organización, pueblo, deber, nacional, social, lucha	377, 387
+N19	NMF	3	cara, poder, hacer, mirar, volver, dolor, ver, momento, vez, hora	474, 422
+N19	NMF	4	poder, decir, también, humano, conciencia, naturaleza, vida, persona, existir, ejemplo	213, 488
+N19	NMF	5	mujer, cuerpo, amor, sueño, hombre, desnudo, decir, madre, hacer, amante	16, 7
+N19	NMF	6	redactor, decir, policía, firmar, artículo, escribir, declaración, doctor, gente, texto	9, 51
+N19	NMF	7	guerra, alemán, ejército, pueblo, frente, nación, deber, política, paz, enemigo	385, 384
+N20	NMF	0	decir, poder, hacer, saber, ver, mucho, vez, pensar, volver, madre	81, 203
+N20	NMF	1	dios, así, palacio, pretendiente, hijo, casa, decir, padre, nave, hombre	116, 113
+N20	NMF	2	alemán, pueblo, judío, partido, político, deber, movimiento, nacional, poder, lucha	387, 383
+N20	NMF	3	-decir, útil, único, únicamente, último, últimamente, abrazar, abrazo, abrigar, abrigo	
+N20	NMF	4	guerra, aeroplano, inventar, paz, impresionar, enemigo, miembro, incluso, discutir, importar	325
+N20	NMF	5	mujer, derecho, valorar, hombre, sexo, naturaleza, fidelidad, desnudo, revolución, mamá	114, 16
+N20	NMF	6	redactor, firmar, preso, reír, petición, texto, hijo, político, checo, rojo	
+N20	NMF	7	ejército, derrota, alemán, militar, desastre, desgracia, guerra, comando, ocasionar, combatiente	
+N21	NMF	0	decir, déjame, día, díjol, echado, echar, eco, economía, económico, edad	
+N21	NMF	1	-decir, útil, único, únicamente, último, últimamente, abrazar, abrazo, abrigar, abrigo	
+N21	NMF	2	pueblo, alemán, dios, judío, partido, político, palacio, pretendiente, nacional, así	
+N21	NMF	3	guerra, cara, dolor, momento, hora, telepantalla, mirar, sitio, siempre, mano	
+N21	NMF	4	guerra, poder, existir, decir, incluso, humano, persona, pasado, conciencia, ejemplo	
+N21	NMF	5	mujer, hombre, redactor, decir, hijo, firmar, amor, reír, desnudo, derecho	
+N21	NMF	6	redactor, decir, policía, artículo, firmar, escribir, declaración, gente, doctor, texto	
+N21	NMF	7	madre, guerra, alemán, ejército, paz, amor, carta, hijo, derrota, desastre	
+N22	NMF	0	madre, perro, carta, decir, casa, día, postal, jardín, cumpleaños, padre	201, 235
+N22	NMF	1	mujer, cuerpo, amor, sueño, desnudo, hombre, decir, madre, hacer, amante	16, 7
+N22	NMF	2	judío, partido, movimiento, político, organización, pueblo, deber, nacional, social, lucha	377, 387
+N22	NMF	3	redactor, decir, policía, firmar, artículo, escribir, declaración, doctor, gente, texto	9, 51
+N22	NMF	4	dios, así, palacio, pretendiente, hijo, casa, nave, padre, decir, tierra	116, 113
+N22	NMF	5	cara, poder, hacer, mirar, volver, dolor, ver, momento, vez, hora	474, 422
+N22	NMF	6	poder, decir, también, humano, conciencia, naturaleza, vida, persona, existir, ejemplo	213, 488
+N22	NMF	7	guerra, alemán, ejército, pueblo, frente, nación, deber, política, paz, enemigo	385, 384
+N23	NMF	0	madre, perro, carta, decir, casa, día, postal, jardín, cumpleaños, padre	201, 235
+N23	NMF	1	dios, así, palacio, pretendiente, hijo, casa, nave, padre, decir, tierra	116, 113
+N23	NMF	2	judío, partido, movimiento, político, organización, pueblo, deber, nacional, social, lucha	377, 387
+N23	NMF	3	cara, poder, hacer, mirar, volver, dolor, ver, momento, vez, hora	474, 422
+N23	NMF	4	poder, decir, también, humano, conciencia, naturaleza, vida, persona, existir, ejemplo	213, 488
+N23	NMF	5	mujer, cuerpo, amor, sueño, desnudo, hombre, decir, madre, hacer, amante	16, 7
+N23	NMF	6	redactor, decir, policía, firmar, artículo, escribir, declaración, doctor, gente, texto	9, 51
+N23	NMF	7	guerra, alemán, ejército, pueblo, frente, nación, deber, política, paz, enemigo	385, 384
+N24	NMF	0	madre, perro, carta, decir, casa, postal, día, cumpleaños, jardín, padre	201, 235
+N24	NMF	1	dios, así, palacio, pretendiente, hijo, casa, nave, padre, decir, tierra	116, 113
+N24	NMF	2	judío, partido, movimiento, político, organización, pueblo, deber, social, nacional, lucha	377, 387
+N24	NMF	3	cara, mirar, volver, hacer, ver, dolor, poder, momento, vez, hora	474, 422
+N24	NMF	4	poder, decir, también, humano, existir, conciencia, vida, persona, naturaleza, sólo	213, 488
+N24	NMF	5	mujer, cuerpo, amor, sueño, hombre, desnudo, decir, madre, hacer, derecho	16, 7
+N24	NMF	6	redactor, decir, policía, firmar, artículo, escribir, declaración, doctor, gente, hombre	9, 51
+N24	NMF	7	guerra, alemán, ejército, pueblo, frente, nación, deber, política, paz, enemigo	385, 384
+N25	NMF	0	madre, perro, carta, decir, casa, día, postal, jardín, cumpleaños, padre	201, 235
+N25	NMF	1	dios, así, palacio, pretendiente, hijo, casa, nave, padre, decir, tierra	116, 113
+N25	NMF	2	judío, partido, movimiento, político, organización, pueblo, deber, nacional, social, lucha	377, 387
+N25	NMF	3	cara, poder, hacer, mirar, volver, dolor, ver, momento, vez, hora	474, 422
+N25	NMF	4	poder, decir, también, humano, conciencia, naturaleza, vida, persona, existir, ejemplo	213, 488
+N25	NMF	5	mujer, cuerpo, amor, sueño, desnudo, hombre, decir, madre, hacer, amante	16, 7
+N25	NMF	6	redactor, decir, policía, firmar, artículo, escribir, declaración, doctor, gente, texto	9, 51
+N25	NMF	7	guerra, alemán, ejército, pueblo, frente, nación, deber, política, paz, enemigo	385, 384
