@@ -1,0 +1,6 @@
+experiment_id	algorithm	topic_id	top_words	representative_passages
+L43	LDA	0	sofía, es, había, también, hilde, madre, alberto, estaba, vez, muy	266, 233, 246
+L43	LDA	1	había, era, tomás, winston, estaba, tenía, dijo, teresa, ya, vez	62, 99, 67
+L43	LDA	2	es, también, ser, sofía, vida, hombre, ha, era, puede, decir	269, 268, 278
+L43	LDA	3	es, estado, guerra, pueblo, partido, era, fue, sólo, ser, ya	319, 324, 398
+L43	LDA	4	odiseo, así, ya, dioses, palacio, telémaco, casa, zeus, pretendientes, tierra	123, 174, 117

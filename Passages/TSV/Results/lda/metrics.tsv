@@ -1,0 +1,131 @@
+experiment_id	algorithm	split	metric	value	interpretation	note
+L01	LDA	train	perplexity	2072.965816	lower is better	fixed vocabulary (base)
+L01	LDA	dev	perplexity	16698.452323	lower is better	fixed vocabulary (base)
+L01	LDA	train	coherence_npmi	0.095318		top 10 words, document co-occurrence on train; higher is better
+L02	LDA	train	perplexity	2557.341474	lower is better	fixed vocabulary (norm_N0)
+L02	LDA	dev	perplexity	19035.268566	lower is better	fixed vocabulary (norm_N0)
+L02	LDA	train	coherence_npmi	0.062067		top 10 words, document co-occurrence on train; higher is better
+L03	LDA	train	perplexity	2833.078747	lower is better	fixed vocabulary (norm_N1)
+L03	LDA	dev	perplexity	27971.970864	lower is better	fixed vocabulary (norm_N1)
+L03	LDA	train	coherence_npmi	0.081744		top 10 words, document co-occurrence on train; higher is better
+L04	LDA	train	perplexity	3514.828065	lower is better	fixed vocabulary (norm_N2)
+L04	LDA	dev	perplexity	38623.384354	lower is better	fixed vocabulary (norm_N2)
+L04	LDA	train	coherence_npmi	0.136683		top 10 words, document co-occurrence on train; higher is better
+L05	LDA	train	perplexity	2035.848183	lower is better	fixed vocabulary (norm_N4)
+L05	LDA	dev	perplexity	15218.664714	lower is better	fixed vocabulary (norm_N4)
+L05	LDA	train	coherence_npmi	0.057865		top 10 words, document co-occurrence on train; higher is better
+L06	LDA	train	perplexity	5657.755729	lower is better	fixed vocabulary (ngram_12)
+L06	LDA	dev	perplexity	102281.317468	lower is better	fixed vocabulary (ngram_12)
+L06	LDA	train	coherence_npmi	0.07287		top 10 words, document co-occurrence on train; higher is better
+L07	LDA	train	perplexity	6699.766381	lower is better	fixed vocabulary (ngram_13)
+L07	LDA	dev	perplexity	148036.475763	lower is better	fixed vocabulary (ngram_13)
+L07	LDA	train	coherence_npmi	0.0573		top 10 words, document co-occurrence on train; higher is better
+L08	LDA	train	perplexity	1477.159594	lower is better	fixed vocabulary (vocab_V1)
+L08	LDA	dev	perplexity	5940.393831	lower is better	fixed vocabulary (vocab_V1)
+L08	LDA	train	coherence_npmi	0.095752		top 10 words, document co-occurrence on train; higher is better
+L09	LDA	train	perplexity	1161.602019	lower is better	fixed vocabulary (vocab_V3)
+L09	LDA	dev	perplexity	5482.079682	lower is better	fixed vocabulary (vocab_V3)
+L09	LDA	train	coherence_npmi	0.107446		top 10 words, document co-occurrence on train; higher is better
+L10	LDA	train	perplexity	3167.404931	lower is better	fixed vocabulary (norm_N2)
+L10	LDA	dev	perplexity	16346.998544	lower is better	fixed vocabulary (norm_N2)
+L10	LDA	train	coherence_npmi	0.135606		top 10 words, document co-occurrence on train; higher is better
+L11	LDA	train	perplexity	4362.99033	lower is better	fixed vocabulary (norm_N2)
+L11	LDA	dev	perplexity	84207.048457	lower is better	fixed vocabulary (norm_N2)
+L11	LDA	train	coherence_npmi	0.136324		top 10 words, document co-occurrence on train; higher is better
+L12	LDA	train	perplexity	3184.823275	lower is better	fixed vocabulary (norm_N2)
+L12	LDA	dev	perplexity	16445.650508	lower is better	fixed vocabulary (norm_N2)
+L12	LDA	train	coherence_npmi	0.139211		top 10 words, document co-occurrence on train; higher is better
+L13	LDA	train	perplexity	4387.686605	lower is better	fixed vocabulary (norm_N2)
+L13	LDA	dev	perplexity	87006.240329	lower is better	fixed vocabulary (norm_N2)
+L13	LDA	train	coherence_npmi	0.136324		top 10 words, document co-occurrence on train; higher is better
+L14	LDA	train	perplexity	3329.541034	lower is better	fixed vocabulary (norm_N2)
+L14	LDA	dev	perplexity	11718.599772	lower is better	fixed vocabulary (norm_N2)
+L14	LDA	train	coherence_npmi	0.142447		top 10 words, document co-occurrence on train; higher is better
+L15	LDA	train	perplexity	4637.279189	lower is better	fixed vocabulary (norm_N2)
+L15	LDA	dev	perplexity	83702.669468	lower is better	fixed vocabulary (norm_N2)
+L15	LDA	train	coherence_npmi	0.177905		top 10 words, document co-occurrence on train; higher is better
+L16	LDA	train	perplexity	3299.133473	lower is better	fixed vocabulary (norm_N2)
+L16	LDA	dev	perplexity	11622.031586	lower is better	fixed vocabulary (norm_N2)
+L16	LDA	train	coherence_npmi	0.148883		top 10 words, document co-occurrence on train; higher is better
+L17	LDA	train	perplexity	4623.762141	lower is better	fixed vocabulary (norm_N2)
+L17	LDA	dev	perplexity	82744.404781	lower is better	fixed vocabulary (norm_N2)
+L17	LDA	train	coherence_npmi	0.169921		top 10 words, document co-occurrence on train; higher is better
+L18	LDA	train	perplexity	3343.77728	lower is better	fixed vocabulary (norm_N2)
+L18	LDA	dev	perplexity	23470.558577	lower is better	fixed vocabulary (norm_N2)
+L18	LDA	train	coherence_npmi	0.071293		top 10 words, document co-occurrence on train; higher is better
+L19	LDA	train	perplexity	4506.789741	lower is better	fixed vocabulary (norm_N2)
+L19	LDA	dev	perplexity	150003.801458	lower is better	fixed vocabulary (norm_N2)
+L19	LDA	train	coherence_npmi	0.09883		top 10 words, document co-occurrence on train; higher is better
+L20	LDA	train	perplexity	3339.098943	lower is better	fixed vocabulary (norm_N2)
+L20	LDA	dev	perplexity	23499.225201	lower is better	fixed vocabulary (norm_N2)
+L20	LDA	train	coherence_npmi	0.071293		top 10 words, document co-occurrence on train; higher is better
+L21	LDA	train	perplexity	4507.7264	lower is better	fixed vocabulary (norm_N2)
+L21	LDA	dev	perplexity	151742.492228	lower is better	fixed vocabulary (norm_N2)
+L21	LDA	train	coherence_npmi	0.09883		top 10 words, document co-occurrence on train; higher is better
+L22	LDA	train	perplexity	3416.12698	lower is better	fixed vocabulary (norm_N2)
+L22	LDA	dev	perplexity	11601.143263	lower is better	fixed vocabulary (norm_N2)
+L22	LDA	train	coherence_npmi	0.105943		top 10 words, document co-occurrence on train; higher is better
+L23	LDA	train	perplexity	4764.413183	lower is better	fixed vocabulary (norm_N2)
+L23	LDA	dev	perplexity	82163.267981	lower is better	fixed vocabulary (norm_N2)
+L23	LDA	train	coherence_npmi	0.226236		top 10 words, document co-occurrence on train; higher is better
+L24	LDA	train	perplexity	3412.211909	lower is better	fixed vocabulary (norm_N2)
+L24	LDA	dev	perplexity	11738.764682	lower is better	fixed vocabulary (norm_N2)
+L24	LDA	train	coherence_npmi	0.098748		top 10 words, document co-occurrence on train; higher is better
+L25	LDA	train	perplexity	4766.530328	lower is better	fixed vocabulary (norm_N2)
+L25	LDA	dev	perplexity	83380.279128	lower is better	fixed vocabulary (norm_N2)
+L25	LDA	train	coherence_npmi	0.231762		top 10 words, document co-occurrence on train; higher is better
+L26	LDA	train	perplexity	3396.536243	lower is better	fixed vocabulary (norm_N2)
+L26	LDA	dev	perplexity	33627.333943	lower is better	fixed vocabulary (norm_N2)
+L26	LDA	train	coherence_npmi	0.150017		top 10 words, document co-occurrence on train; higher is better
+L27	LDA	train	perplexity	4583.349892	lower is better	fixed vocabulary (norm_N2)
+L27	LDA	dev	perplexity	219805.135013	lower is better	fixed vocabulary (norm_N2)
+L27	LDA	train	coherence_npmi	0.161398		top 10 words, document co-occurrence on train; higher is better
+L28	LDA	train	perplexity	3396.536243	lower is better	fixed vocabulary (norm_N2)
+L28	LDA	dev	perplexity	33627.333943	lower is better	fixed vocabulary (norm_N2)
+L28	LDA	train	coherence_npmi	0.150017		top 10 words, document co-occurrence on train; higher is better
+L29	LDA	train	perplexity	4583.349892	lower is better	fixed vocabulary (norm_N2)
+L29	LDA	dev	perplexity	219805.135013	lower is better	fixed vocabulary (norm_N2)
+L29	LDA	train	coherence_npmi	0.161398		top 10 words, document co-occurrence on train; higher is better
+L30	LDA	train	perplexity	3304.245586	lower is better	fixed vocabulary (norm_N2)
+L30	LDA	dev	perplexity	15425.369944	lower is better	fixed vocabulary (norm_N2)
+L30	LDA	train	coherence_npmi	0.073224		top 10 words, document co-occurrence on train; higher is better
+L31	LDA	train	perplexity	4671.257737	lower is better	fixed vocabulary (norm_N2)
+L31	LDA	dev	perplexity	115056.358891	lower is better	fixed vocabulary (norm_N2)
+L31	LDA	train	coherence_npmi	0.133125		top 10 words, document co-occurrence on train; higher is better
+L32	LDA	train	perplexity	3304.245586	lower is better	fixed vocabulary (norm_N2)
+L32	LDA	dev	perplexity	15425.369944	lower is better	fixed vocabulary (norm_N2)
+L32	LDA	train	coherence_npmi	0.073224		top 10 words, document co-occurrence on train; higher is better
+L33	LDA	train	perplexity	4671.257737	lower is better	fixed vocabulary (norm_N2)
+L33	LDA	dev	perplexity	115056.358891	lower is better	fixed vocabulary (norm_N2)
+L33	LDA	train	coherence_npmi	0.133125		top 10 words, document co-occurrence on train; higher is better
+L34	LDA	train	perplexity	3528.864953	lower is better	fixed vocabulary (norm_N2)
+L34	LDA	dev	perplexity	76762.138829	lower is better	fixed vocabulary (norm_N2)
+L34	LDA	train	coherence_npmi	0.027387		top 10 words, document co-occurrence on train; higher is better
+L35	LDA	train	perplexity	4845.899888	lower is better	fixed vocabulary (norm_N2)
+L35	LDA	dev	perplexity	546172.750939	lower is better	fixed vocabulary (norm_N2)
+L35	LDA	train	coherence_npmi	0.071369		top 10 words, document co-occurrence on train; higher is better
+L36	LDA	train	perplexity	3541.906499	lower is better	fixed vocabulary (norm_N2)
+L36	LDA	dev	perplexity	75545.907667	lower is better	fixed vocabulary (norm_N2)
+L36	LDA	train	coherence_npmi	0.025335		top 10 words, document co-occurrence on train; higher is better
+L37	LDA	train	perplexity	4860.139587	lower is better	fixed vocabulary (norm_N2)
+L37	LDA	dev	perplexity	533695.618203	lower is better	fixed vocabulary (norm_N2)
+L37	LDA	train	coherence_npmi	0.066471		top 10 words, document co-occurrence on train; higher is better
+L38	LDA	train	perplexity	3556.195034	lower is better	fixed vocabulary (norm_N2)
+L38	LDA	dev	perplexity	20502.115525	lower is better	fixed vocabulary (norm_N2)
+L38	LDA	train	coherence_npmi	0.065779		top 10 words, document co-occurrence on train; higher is better
+L39	LDA	train	perplexity	4927.936279	lower is better	fixed vocabulary (norm_N2)
+L39	LDA	dev	perplexity	140025.237202	lower is better	fixed vocabulary (norm_N2)
+L39	LDA	train	coherence_npmi	0.084712		top 10 words, document co-occurrence on train; higher is better
+L40	LDA	train	perplexity	3574.711839	lower is better	fixed vocabulary (norm_N2)
+L40	LDA	dev	perplexity	20390.887112	lower is better	fixed vocabulary (norm_N2)
+L40	LDA	train	coherence_npmi	0.065501		top 10 words, document co-occurrence on train; higher is better
+L41	LDA	train	perplexity	4948.319115	lower is better	fixed vocabulary (norm_N2)
+L41	LDA	dev	perplexity	138247.063935	lower is better	fixed vocabulary (norm_N2)
+L41	LDA	train	coherence_npmi	0.084187		top 10 words, document co-occurrence on train; higher is better
+L42	LDA	train	perplexity	3363.180017	lower is better	fixed vocabulary (norm_N2)
+L42	LDA	dev	perplexity	17444.823303	lower is better	fixed vocabulary (norm_N2)
+L42	LDA	train	coherence_npmi	0.116754		top 10 words, document co-occurrence on train; higher is better
+L43	LDA	train	perplexity	3016.635277	lower is better	fixed vocabulary (norm_N2)
+L43	LDA	dev	perplexity	15730.113389	lower is better	fixed vocabulary (norm_N2)
+L43	LDA	train	coherence_npmi	0.139628		top 10 words, document co-occurrence on train; higher is better
+L43	LDA	test	perplexity	15848.095342	lower is better	fixed vocabulary (norm_N2); single final evaluation
