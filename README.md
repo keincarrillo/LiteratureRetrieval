@@ -10,7 +10,7 @@ Tabla de verificación directa frente a los entregables requeridos:
 
 | Requisito de evaluación | Dónde verlo en el repositorio | Detalles clave verificables |
 | :--- | :--- | :--- |
-| **1. Código fuente con Pipelines, entorno, semillas e instrucciones reproducibles** | [requirements.txt](requirements.txt)<br>[Passages/split.py](Passages/split.py)<br>[Passages/normalize.py](Passages/normalize.py)<br>[Passages/explore_vocab.py](Passages/explore_vocab.py)<br>[Passages/representation.py](Passages/representation.py)<br>[Passages/results.py](Passages/results.py)<br>[Passages/kmeans.py](Passages/kmeans.py)<br>[Passages/agglomerative.py](Passages/agglomerative.py)<br>[Passages/lda.py](Passages/lda.py)<br>[Passages/nmf.py](Passages/nmf.py) | • **Pipelines:** encapsulados con `scikit-learn` (`armar_vectorizador` en `representation.py`, ajustados solo sobre `train`).<br>• **Semilla fija:** `SEED = 3` compartida desde `representation.py` y `split.py`.<br>• **Entorno:** `pandas`, `spacy` (`es_core_news_lg`), `scikit-learn==1.7.2`, `numpy` (ver instrucciones de reproducción abajo). |
+| **1. Código fuente con Pipelines, entorno, semillas e instrucciones reproducibles** | [requirements.txt](requirements.txt)<br>[Passages/split.py](Passages/split.py)<br>[Passages/normalize.py](Passages/normalize.py)<br>[Passages/explore_vocab.py](Passages/explore_vocab.py)<br>[Passages/representation.py](Passages/representation.py)<br>[Passages/results.py](Passages/results.py)<br>[Passages/kmeans.py](Passages/kmeans.py)<br>[Passages/agglomerative.py](Passages/agglomerative.py)<br>[Passages/lda.py](Passages/lda.py)<br>[Passages/nmf.py](Passages/nmf.py)<br>[Passages/interfaz.py](Passages/interfaz.py) | • **Pipelines:** encapsulados con `scikit-learn` (`armar_vectorizador` en `representation.py`, ajustados solo sobre `train`).<br>• **Semilla fija:** `SEED = 3` compartida desde `representation.py` y `split.py`.<br>• **Entorno:** `pandas`, `spacy` (`es_core_news_lg`), `scikit-learn==1.7.2`, `numpy` (ver instrucciones de reproducción abajo). |
 | **2. `documents.tsv`** | [Passages/TSV/documents.tsv](Passages/TSV/documents.tsv) | • 500 fragmentos (`train`: 357, `dev`: 72, `test`: 71) partidos por capítulo (`chapter_group`) sin fuga.<br>• Columnas iniciales: `fragment_id`, `book_id`, `title`, `author`, `text`, `split` + metadatos de Etapa 1.<br>• `text` conserva el pasaje literario original sin etiquetas objetivo. |
 | **3. `clustering_results.tsv` + tamaños, top 10 palabras y pasajes representativos (K-Means y Agglomerative)** | Consolidados:<br>[clustering_results.tsv](Passages/TSV/Results/clustering_results.tsv)<br>[cluster_summary.tsv](Passages/TSV/Results/cluster_summary.tsv)<br><br>Por algoritmo:<br>[TSV/Results/kmeans/](Passages/TSV/Results/kmeans/) (`K38`)<br>[TSV/Results/agglomerative/](Passages/TSV/Results/agglomerative/) (`A23`) | • `clustering_results.tsv` incluye `experiment_id`, `algorithm`, `fragment_id`, `split`, `cluster_id`, `assignment_note`.<br>• En **Agglomerative (`A23`)**, `assignment_note` distingue explícitamente `fit_predict on train only` (357 filas de `train`) de `approximate assignment (nearest centroid)` (72 de `dev` y 71 de `test`).<br>• `cluster_summary.tsv` reporta `size`, `top_words` (10 palabras originales) y `representative_passages` (`fragment_id`).<br>• Gráfica 2D de Agglomerative: [figura1_agglomerative_A23.png](Passages/TSV/Results/agglomerative/figura1_agglomerative_A23.png). |
 | **4. `topic_results.tsv` + palabras por tema, pasajes representativos, perplejidad (LDA) y error de reconstrucción (NMF)** | Consolidados:<br>[topic_results.tsv](Passages/TSV/Results/topic_results.tsv)<br>[topic_words.tsv](Passages/TSV/Results/topic_words.tsv)<br><br>Por algoritmo:<br>[TSV/Results/lda/](Passages/TSV/Results/lda/) (`L43`)<br>[TSV/Results/nmf/](Passages/TSV/Results/nmf/) (`N19`) | • `topic_results.tsv` contiene `experiment_id`, `algorithm`, `fragment_id`, `split`, `topic_id`, `topic_weight`.<br>• `topic_words.tsv` incluye las 10 palabras principales y pasajes representativos por tema.<br>• `metrics.tsv` registra `perplexity` para LDA y `reconstruction_error` para NMF. |
@@ -38,6 +38,13 @@ python Passages/nmf.py
 
 # 4. Consolidar los 4 algoritmos en Passages/TSV/Results/*.tsv
 python Passages/results.py
+
+# 5. Consultar clusters, pesos de temas y métricas en la interfaz CLI
+python Passages/interfaz.py pasaje 432        # cluster y temas de un pasaje
+python Passages/interfaz.py resumen           # clusters y temas con palabras y pasajes
+python Passages/interfaz.py resumen temas     # solo temas (o: resumen clustering)
+python Passages/interfaz.py metricas          # receta, hiperparámetros y métricas de K38, A23, L43 y N19
+python Passages/interfaz.py                   # menú interactivo
 ```
 
 ---
@@ -117,7 +124,11 @@ LiteratureRetrieval/
 │   ├── explore_vocab.py                    # Analisis exploratorio de vocabulario y varianza SVD
 │   ├── representation.py                   # 13 recetas y constructor comun de vectorizadores
 │   ├── results.py                          # Funciones compartidas de guardado y consolidacion TSV
+│   ├── kmeans.py                           # Experimentos y evaluacion de K-Means
 │   ├── agglomerative.py                    # Experimentos y evaluacion de Agglomerative Clustering
+│   ├── lda.py                              # Experimentos y evaluacion de LDA
+│   ├── nmf.py                              # Experimentos y evaluacion de NMF
+│   ├── interfaz.py                         # Interfaz CLI para consultar clusters, temas y metricas
 │   └── TSV/                                # Particiones, corpus normalizados y resultados por metodo
 │
 └── docs/                                   # Documentacion tecnica detallada
@@ -394,6 +405,7 @@ python Passages/results.py
 | K-Means | `Passages/kmeans.py` | `Passages/TSV/Results/kmeans/` | Listo (`K38`) |
 | LDA | `Passages/lda.py` | `Passages/TSV/Results/lda/` | Listo (`L43`) |
 | NMF | `Passages/nmf.py` | `Passages/TSV/Results/nmf/` | Listo (`N19`) |
+| Interfaz CLI | `Passages/interfaz.py` | Consola (`pasaje`, `resumen`, `metricas`) | Listo |
 
 ---
 
