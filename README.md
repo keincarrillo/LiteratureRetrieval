@@ -1,5 +1,49 @@
 # LiteratureRetrieval
 
+> **Guía rápida de revisión (Etapa 2 — "Passages"):** La primera sección mapea directamente cada punto de **11. Required deliverables** a los archivos exactos dentro del repositorio. Debajo se conserva íntegra la documentación técnica original del proyecto.
+
+---
+
+## 1. Guía de evaluación y entregables (Etapa 2: Pasajes)
+
+Tabla de verificación directa frente a los entregables requeridos:
+
+| Requisito de evaluación | Dónde verlo en el repositorio | Detalles clave verificables |
+| :--- | :--- | :--- |
+| **1. Código fuente con Pipelines, entorno, semillas e instrucciones reproducibles** | [requirements.txt](requirements.txt)<br>[Passages/split.py](Passages/split.py)<br>[Passages/normalize.py](Passages/normalize.py)<br>[Passages/explore_vocab.py](Passages/explore_vocab.py)<br>[Passages/representation.py](Passages/representation.py)<br>[Passages/results.py](Passages/results.py)<br>[Passages/kmeans.py](Passages/kmeans.py)<br>[Passages/agglomerative.py](Passages/agglomerative.py)<br>[Passages/lda.py](Passages/lda.py)<br>[Passages/nmf.py](Passages/nmf.py) | • **Pipelines:** encapsulados con `scikit-learn` (`armar_vectorizador` en `representation.py`, ajustados solo sobre `train`).<br>• **Semilla fija:** `SEED = 3` compartida desde `representation.py` y `split.py`.<br>• **Entorno:** `pandas`, `spacy` (`es_core_news_lg`), `scikit-learn==1.7.2`, `numpy` (ver instrucciones de reproducción abajo). |
+| **2. `documents.tsv`** | [Passages/TSV/documents.tsv](Passages/TSV/documents.tsv) | • 500 fragmentos (`train`: 357, `dev`: 72, `test`: 71) partidos por capítulo (`chapter_group`) sin fuga.<br>• Columnas iniciales: `fragment_id`, `book_id`, `title`, `author`, `text`, `split` + metadatos de Etapa 1.<br>• `text` conserva el pasaje literario original sin etiquetas objetivo. |
+| **3. `clustering_results.tsv` + tamaños, top 10 palabras y pasajes representativos (K-Means y Agglomerative)** | Consolidados:<br>[clustering_results.tsv](Passages/TSV/Results/clustering_results.tsv)<br>[cluster_summary.tsv](Passages/TSV/Results/cluster_summary.tsv)<br><br>Por algoritmo:<br>[TSV/Results/kmeans/](Passages/TSV/Results/kmeans/) (`K38`)<br>[TSV/Results/agglomerative/](Passages/TSV/Results/agglomerative/) (`A23`) | • `clustering_results.tsv` incluye `experiment_id`, `algorithm`, `fragment_id`, `split`, `cluster_id`, `assignment_note`.<br>• En **Agglomerative (`A23`)**, `assignment_note` distingue explícitamente `fit_predict on train only` (357 filas de `train`) de `approximate assignment (nearest centroid)` (72 de `dev` y 71 de `test`).<br>• `cluster_summary.tsv` reporta `size`, `top_words` (10 palabras originales) y `representative_passages` (`fragment_id`).<br>• Gráfica 2D de Agglomerative: [figura1_agglomerative_A23.png](Passages/TSV/Results/agglomerative/figura1_agglomerative_A23.png). |
+| **4. `topic_results.tsv` + palabras por tema, pasajes representativos, perplejidad (LDA) y error de reconstrucción (NMF)** | Consolidados:<br>[topic_results.tsv](Passages/TSV/Results/topic_results.tsv)<br>[topic_words.tsv](Passages/TSV/Results/topic_words.tsv)<br><br>Por algoritmo:<br>[TSV/Results/lda/](Passages/TSV/Results/lda/) (`L43`)<br>[TSV/Results/nmf/](Passages/TSV/Results/nmf/) (`N19`) | • `topic_results.tsv` contiene `experiment_id`, `algorithm`, `fragment_id`, `split`, `topic_id`, `topic_weight`.<br>• `topic_words.tsv` incluye las 10 palabras principales y pasajes representativos por tema.<br>• `metrics.tsv` registra `perplexity` para LDA y `reconstruction_error` para NMF. |
+| **5. `experiments.tsv` (registro completo de los 4 métodos)** | Individuales (completos):<br>• [kmeans/experiments.tsv](Passages/TSV/Results/kmeans/experiments.tsv) (`K01`–`K61`, sel. `K38`)<br>• [agglomerative/experiments.tsv](Passages/TSV/Results/agglomerative/experiments.tsv) (`A01`–`A31`, sel. `A23`)<br>• [lda/experiments.tsv](Passages/TSV/Results/lda/experiments.tsv) (`L01`–`L43`, sel. `L43`)<br>• [nmf/experiments.tsv](Passages/TSV/Results/nmf/experiments.tsv) (`N01`–`N25`, sel. `N19`)<br><br>Consolidado:<br>• [Results/experiments.tsv](Passages/TSV/Results/experiments.tsv) y [Results/metrics.tsv](Passages/TSV/Results/metrics.tsv) | • Columnas: `experiment_id`, `task`, `method`, `recipe`, `normalization`, `representation`, `ngram_range`, `vocabulary`, `dim_reduction`, `hyperparameters`, `dev_metric`, `dev_value`, `selected`, `notes`.<br>• Cada archivo registra todas las recetas (`N0`–`N4`, `R1`–`R3`, n-gramas, vocabulario, SVD), búsqueda de hiperparámetros, evidencia en `dev` (o `train` en Agglomerative) y decisión `selected` (`yes`/`no`). |
+| **6. Reporte PDF** | Entrega externa / carpeta de reporte | • Reporte `ProjectReport_Stage2-Passages.pdf` con tablas, figuras, análisis de errores/limitaciones e integrantes del equipo. |
+
+### Reproducción rápida (Etapa 2)
+
+```bash
+# 1. Instalar dependencias (Python >= 3.10 recomendado)
+pip install -r requirements.txt
+python -m spacy download es_core_news_lg
+
+# 2. (Opcional: los TSV ya están generados) Regenerar partición, normalización y análisis exploratorio
+python Passages/split.py
+python Passages/normalize.py
+python Passages/explore_vocab.py
+python Passages/representation.py
+
+# 3. Ejecutar los 4 algoritmos (cada uno guarda en Passages/TSV/Results/<algoritmo>/)
+python Passages/kmeans.py
+python Passages/agglomerative.py
+python Passages/lda.py
+python Passages/nmf.py
+
+# 4. Consolidar los 4 algoritmos en Passages/TSV/Results/*.tsv
+python Passages/results.py
+```
+
+---
+
+## 2. Documentación completa del proyecto (Etapa 1 y Etapa 2)
+
 Sistema integral de recuperacion de informacion (Information Retrieval - IR) sobre textos literarios, basado en el Modelo de Espacio Vectorial (Vector Space Model - VSM) y similitud coseno para la practica de Procesamiento de Lenguaje Natural (PLN).
 
 El sistema permite indexar, normalizar, representar vectorialmente, consultar y evaluar sistematicamente un corpus literario de 500 fragmentos (~500 palabras por fragmento) distribuidos equitativamente entre 5 obras fundamentales de la literatura universal:
@@ -347,7 +391,9 @@ python Passages/results.py
 | :--- | :--- | :--- | :--- |
 | Base y vectorizacion | `Passages/representation.py`, `Passages/results.py` | `Passages/TSV/` | Listo |
 | Agglomerative Clustering | `Passages/agglomerative.py` | `Passages/TSV/Results/agglomerative/` | Listo (`A23`) |
-| K-Means / LDA / NMF | `kmeans.py`, `lda.py`, `nmf.py` | `Passages/TSV/Results/<algoritmo>/` | Pendiente de equipo |
+| K-Means | `Passages/kmeans.py` | `Passages/TSV/Results/kmeans/` | Listo (`K38`) |
+| LDA | `Passages/lda.py` | `Passages/TSV/Results/lda/` | Listo (`L43`) |
+| NMF | `Passages/nmf.py` | `Passages/TSV/Results/nmf/` | Listo (`N19`) |
 
 ---
 
