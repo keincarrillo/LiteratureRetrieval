@@ -1,19 +1,30 @@
 """
-Integrante 4 - LDA (Latent Dirichlet Allocation) sobre fragmentos literarios.
+LDA (Latent Dirichlet Allocation) sobre fragmentos literarios.
 
-Flujo (README, sección 3):
-    1. Probar las 9 recetas de recetas_para("lda") con hiperparámetros por defecto.
-       Como la perplejidad NO es comparable entre recetas (cambia el vocabulario),
-       la mejor receta se elige con coherencia NPMI + diversidad de temas (ver abajo).
-    2. Con la receta fija, búsqueda pequeña de hiperparámetros; se elige con la
-       perplejidad en dev (el vocabulario ya es el mismo en todas las corridas).
-    3. Interpretar: top 10 palabras, pasajes representativos, tema dominante x book_id.
-    4. Test: la configuración elegida se evalúa UNA sola vez.
-    5. Guardar todo con results.py.
+Flujo:
+    1. Probar las 9 recetas de recetas_para("lda") (conteos, sin SVD) con
+       hiperparámetros por defecto (L01–L09). Como la perplejidad NO es comparable
+       entre recetas (cambia el vocabulario), la receta se elige con
+       coherencia NPMI x diversidad de temas. Ganó norm_N2.
+    2. Con la receta fija, búsqueda en dos etapas (L10–L43):
+         A. n_components ∈ {5, 8, 10, 15} x learning_method ∈ {batch, online} x
+            doc_topic_prior ∈ {1/k, 0.1} x topic_word_prior ∈ {1/k, 0.01},
+            con max_iter = 20.
+         B. Con la mejor de A, max_iter ∈ {10, 50}.
+    3. Descartar configuraciones con temas colapsados: un tema dominante en menos de
+       5 fragmentos de train (vacío) o en más de la mitad (gigante). Entre las válidas,
+       elegir la de menor perplejidad en dev (L43). Aquí sí se compara perplejidad,
+       porque todas comparten el mismo vocabulario.
+    4. Interpretar: top 10 palabras y 3 pasajes representativos por tema, y tema
+       dominante x book_id.
+    5. Test: la configuración elegida se evalúa una sola vez (perplejidad y pesos).
 
+NPMI: promedio por tema del NPMI de los pares de sus 10 palabras principales,
+      con coocurrencia por fragmento en train (normalización de la receta).
 Salida: TSV/Results/lda/   (experiments, metrics, topic_results, topic_words)
 Ejecutar: python lda.py
 """
+
 import itertools
 import warnings
 

@@ -1,16 +1,25 @@
+
 """
-Integrante 2 - K-Means sobre fragmentos literarios.
+K-Means sobre fragmentos literarios.
 
 Flujo:
-    1. Probar las 13 recetas de representation.py en train con hiperparámetros por defecto.
-    2. Con la mejor receta (elegida por silhouette en dev), buscar n_clusters, init,
-       n_init y max_iter. La selección usa SOLO dev; test se evalúa una sola vez al final.
-    3. Guardar resumen por cluster (top 10 palabras y pasajes representativos), la
-       asignación de train/dev/test hecha con predict() y la tabla externa cluster x book_id
-       únicamente para interpretar el reporte.
+    1. Probar las 13 recetas de recetas_para("kmeans") con hiperparámetros por defecto
+       (k=5, init=k-means++, n_init=10, max_iter=300) y elegir la receta con mayor
+       silhouette en dev (K01–K13). Ganó svd_100.
+    2. Con la receta fija, probar las 48 combinaciones de k ∈ {3, 4, 5, 6, 8, 10},
+       init ∈ {k-means++, random}, n_init ∈ {10, 20} y max_iter ∈ {100, 300} (K14–K61),
+       siempre con random_state = SEED.
+    3. Descartar las configuraciones con algún cluster menor a 15 fragmentos y elegir
+       la de mayor silhouette en dev (K38). Test no se usa para elegir.
+    4. Asignar dev y test con predict() (asignación nativa); test se evalúa una sola vez.
+    5. Guardar el resumen por cluster (tamaño, top 10 palabras en el espacio original de
+       palabras y pasajes representativos) y la tabla externa cluster x book_id con
+       ARI/NMI, solo para interpretar el reporte.
 
-Salida: TSV/Results/kmeans/
+Salida: TSV/Results/kmeans/   (experiments, metrics, clustering_results, cluster_summary)
+Ejecutar: python kmeans.py
 """
+
 import numpy as np
 import pandas as pd
 from sklearn.cluster import KMeans

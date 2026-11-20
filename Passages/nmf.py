@@ -1,3 +1,29 @@
+"""
+NMF (Non-negative Matrix Factorization) sobre fragmentos literarios.
+
+Flujo (25 experimentos, N01–N25, todos ajustados solo con train y evaluados en dev):
+    1. Número de temas con norm_N4: n_components ∈ {3, 5, 8, 10} (N01–N04).
+    2. Las 9 recetas de recetas_para("nmf") (TF-IDF, sin SVD) con k = 8 (N05–N13).
+    3. Con norm_N4 y k = 8: regularización alpha_W, alpha_H ∈ {0.0001, 0.001} y
+       l1_ratio ∈ {0, 0.5, 1} (N14–N21), init ∈ {random, nndsvdar} (N22–N23) y
+       max_iter ∈ {50, 300} (N24–N25). Base: init=nndsvda, max_iter=1500, seed=3.
+    4. Para cada experimento se mide el error de reconstrucción en train y dev
+       (menor es mejor) y cuántos temas son compartidos entre obras en dev.
+    5. Diagnóstico de los candidatos N05, N14 y N19:
+         - NPMI de las 10 palabras principales de cada tema, con referencia común
+           (fragmentos de train en N3).
+         - Estabilidad: reentrenar con init aleatoria y semillas 3, 11 y 29, emparejar
+           temas (asignación húngara sobre similitud coseno) y promediar la similitud.
+    6. Elegido: N19 (norm_N4, k = 8, alpha_W = alpha_H = 0.0001, l1_ratio = 0), por su
+       estabilidad, coherencia y temas compartidos entre obras. Test solo se
+       transforma una vez, con el modelo ya elegido.
+
+Los pesos de NMF son intensidades, no probabilidades.
+Salida: TSV/Results/nmf/   (experiments, metrics, topic_results, topic_words),
+        escritos con las mismas columnas que define results.py
+Ejecutar: python nmf.py
+"""
+
 from pathlib import Path
 import tempfile
 import warnings

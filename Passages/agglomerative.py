@@ -1,16 +1,28 @@
 """
-Integrante 3 - Agglomerative Clustering sobre fragmentos literarios.
+Agglomerative Clustering sobre fragmentos literarios.
 
 Flujo:
-    1. Probar las 13 recetas de representation.py en train (k=5, ward + euclidean).
-    2. Con la mejor receta, probar combinaciones válidas de k, linkage y metric.
-    3. Elegir la mejor configuración equilibrada en train (sin usar dev ni test).
-    4. Guardar resumen por cluster (top 10 palabras y pasajes representativos),
-       asignación aproximada por centroide más cercano en dev y test (una sola vez),
-       y tabla externa cluster x book_id (solo para interpretación en el reporte).
+    1. Probar las 13 recetas de recetas_para("agglomerative") en train con k=5 y
+       ward + euclidean, y elegir la receta con mayor silhouette en train (A01–A13).
+       Ganó svd_100.
+    2. Con la receta fija, probar las 18 combinaciones válidas de k ∈ {3, 4, 5, 6, 8, 10}
+       con linkage/metric ∈ {ward + euclidean, average + cosine, complete + cosine}
+       (A14–A31). Ward solo se combina con euclidean.
+    3. Descartar las configuraciones con algún cluster menor a 15 fragmentos y elegir
+       la de mayor silhouette en train (A23). AgglomerativeClustering no tiene predict(),
+       así que la selección se hace sobre la partición de train, sin usar dev ni test.
+    4. Asignar dev y test con una regla aproximada: centroide más cercano de los
+       clusters de train (una sola vez, registrada como "approximate assignment",
+       nunca como predicción nativa).
+    5. Guardar el resumen por cluster (tamaño, top 10 palabras y pasajes
+       representativos) y la tabla externa cluster x book_id con ARI/NMI, solo para
+       interpretar el reporte.
 
-Salida: TSV/Results/agglomerative/
+Salida: TSV/Results/agglomerative/   (experiments, metrics, clustering_results,
+        cluster_summary y la figura de la proyección 2D)
+Ejecutar: python agglomerative.py
 """
+
 import numpy as np
 import pandas as pd
 from sklearn.cluster import AgglomerativeClustering
